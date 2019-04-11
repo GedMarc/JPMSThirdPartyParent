@@ -1,0 +1,12 @@
+[submodule "AOPAlliance"]
+	path = AOPAlliance
+	url = https://github.com/GedMarc/aopalliance.git
+[submodule "javax-inject"]
+	path = javax-inject
+	url = https://github.com/GedMarc/javax-inject.git
+[submodule "JsonOrg"]
+	path = JsonOrg
+	url = https://github.com/GedMarc/JSON-java.git
+[submodule "uadetector"]
+	path = uadetector
+	url = https://github.com/GedMarc/UADetectorParent.git
