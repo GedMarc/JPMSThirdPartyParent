@@ -1,12 +1,16 @@
 [submodule "AOPAlliance"]
 	path = AOPAlliance
 	url = https://github.com/GedMarc/aopalliance.git
+	ignore = dirty
 [submodule "javax-inject"]
 	path = javax-inject
 	url = https://github.com/GedMarc/javax-inject.git
+	ignore = dirty
 [submodule "JsonOrg"]
 	path = JsonOrg
 	url = https://github.com/GedMarc/JSON-java.git
+	ignore = dirty
 [submodule "uadetector"]
 	path = uadetector
 	url = https://github.com/GedMarc/UADetectorParent.git
+	ignore = dirty
