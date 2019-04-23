@@ -26,6 +26,7 @@
             <modules>
                 <module>AOPAlliance</module>
                 <module>javax-inject</module>
+                <module>javax.activation</module>
                 <module>JsonOrg</module>
                 <module>uadetector</module>
             </modules>
