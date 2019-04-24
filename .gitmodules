@@ -17,3 +17,6 @@
 [submodule "javax.activation"]
 	path = javax.activation
 	url = https://github.com/GedMarc/jaf.git
+[submodule "javax.transaction"]
+	path = javax.transaction
+	url = https://github.com/eclipse-ee4j/jta-api.git
