@@ -18,3 +18,6 @@
 	path = javax.activation
 	url = https://github.com/GedMarc/jaf.git
 	ignore = dirty
+[submodule "javax.transaction"]
+	path = javax.transaction
+	url = https://github.com/GedMarc/jta-api.git
