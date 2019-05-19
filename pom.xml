@@ -1,7 +1,8 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-	    <parent>
+
+    <parent>
         <groupId>com.jwebmp</groupId>
         <artifactId>jwebmp-builder</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
@@ -26,10 +27,13 @@
             <modules>
                 <module>AOPAlliance</module>
                 <module>javax-inject</module>
-                <!--<module>javax.activation</module>-->
+                <module>java.activation</module>
+                <module>javax.jms</module>
+                <module>javax.activation</module>
 				<module>javax.transaction</module>
                 <module>JsonOrg</module>
                 <module>uadetector</module>
+				<module>JCache</module>
             </modules>
         </profile>
     </profiles>

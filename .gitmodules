@@ -21,3 +21,8 @@
 [submodule "javax.transaction"]
 	path = javax.transaction
 	url = https://github.com/GedMarc/jta-api.git
+	ignore = dirty
+[submodule "javax.jms"]
+	path = javax.jms
+	url = https://github.com/GedMarc/javax.jms.git
+	ignore = dirty

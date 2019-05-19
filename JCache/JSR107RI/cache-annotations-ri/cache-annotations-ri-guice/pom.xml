@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.jwebmp.thirdparty.jcache</groupId>
+        <artifactId>cache-annotations-ri</artifactId>
+        <version>0.0.0_0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>cache-annotations-ri-guice</artifactId>
+    <packaging>jar</packaging>
+
+    <name>JSR107 Annotations RI Guice Support</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.jwebmp.thirdparty.jcache</groupId>
+            <artifactId>cache-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.jwebmp.thirdparty.jcache</groupId>
+            <artifactId>cache-annotations-ri-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.jwebmp.inject</groupId>
+            <artifactId>guice</artifactId>
+        </dependency>
+    </dependencies>
+    <profiles>
+        <profile>
+            <id>jdk8</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.moditect</groupId>
+                        <artifactId>moditect-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>add-module-infos</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>add-module-info</goal>
+                                </goals>
+                                <configuration>
+                                    <overwriteExistingFiles>true</overwriteExistingFiles>
+                                    <module>
+                                        <moduleInfoFile>
+                                            src/jre11/java/module-info.java
+                                        </moduleInfoFile>
+                                    </module>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>
