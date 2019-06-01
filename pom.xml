@@ -34,6 +34,10 @@
                 <module>JsonOrg</module>
                 <module>uadetector</module>
 				<module>JCache</module>
+	<!--			<module>msvcore</module>
+				<module>isorelax</module>
+				<module>xsdlib</module>
+				<module>rngconverter</module>-->
             </modules>
         </profile>
     </profiles>
