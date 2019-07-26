@@ -31,6 +31,7 @@
                 <module>javax.jms</module>
                 <module>javax.activation</module>
 				<module>javax.transaction</module>
+                <module>javax.faces</module>
                 <module>JsonOrg</module>
                 <module>uadetector</module>
 				<module>JCache</module>
