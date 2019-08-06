@@ -26,3 +26,6 @@
 	path = javax.jms
 	url = https://github.com/GedMarc/javax.jms.git
 	ignore = dirty
+[submodule "jaxb-api"]
+	path = jaxb-api
+	url = https://github.com/GedMarc/jaxb-api.git
