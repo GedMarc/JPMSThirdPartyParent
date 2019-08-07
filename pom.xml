@@ -29,7 +29,7 @@
                 <module>javax-inject</module>
                 <module>java.activation</module>
                 <module>javax.jms</module>
-                <module>jaxb-api</module>
+                <!--<module>jaxb-api</module>-->
                 <module>javax.activation</module>
 				<module>javax.transaction</module>
                 <module>JsonOrg</module>
