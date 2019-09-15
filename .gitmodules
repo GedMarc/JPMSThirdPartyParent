@@ -29,3 +29,6 @@
 [submodule "jaxb-api"]
 	path = jaxb-api
 	url = https://github.com/GedMarc/jaxb-api.git
+[submodule "gee4j"]
+	path = gee4j
+	url = https://github.com/GedMarc/GEE4J.git
