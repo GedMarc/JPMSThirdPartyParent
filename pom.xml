@@ -29,11 +29,20 @@
                 <module>javax-inject</module>
                 <module>java.activation</module>
                 <module>javax.jms</module>
-                <!--<module>jaxb-api</module>-->
+				<module>javassist</module>
+				<module>classmate</module>
+                <module>jaxb-api</module>
+				<module>dom4j</module>
+				<module>jandex</module>
+                <module>gee4j</module>
+                <module>hibernate</module>
                 <module>javax.activation</module>
+                <module>java.validation</module>
 				<module>javax.transaction</module>
+				<module>javax.websocket</module>
                 <module>JsonOrg</module>
                 <module>uadetector</module>
+				<module>servlet</module>
 				<module>JCache</module>
 	<!--			<module>msvcore</module>
 				<module>isorelax</module>

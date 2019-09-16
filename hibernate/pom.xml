@@ -1,0 +1,24 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+          <groupId>com.jwebmp.thirdparty</groupId>
+        <artifactId>third-party-modules</artifactId>
+        <version>0.0.0_0-SNAPSHOT</version>
+    </parent>
+
+	<groupId>com.jwebmp.thirdparty.hibernate</groupId>
+    <artifactId>hibernate-parent</artifactId>
+    <packaging>pom</packaging>
+
+    <name>hibernate Parent</name>
+    <description>JPMS Module-Info's for a few of the Jakarta Libraries. These will be removed as time goes by</description>
+    
+	<modules>
+        <module>hibernate-core</module>
+        <module>jpa</module>
+		<module>commons-annotations</module>
+		<module>jboss-logmanager</module>
+	</modules>
+	
+</project>
