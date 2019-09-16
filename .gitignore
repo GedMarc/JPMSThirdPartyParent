@@ -17,5 +17,5 @@ persistence.xml
 *.versionsBackup
 *.log
 *.tlog
-/jaxb-api/jakarta.xml.bind-api-parent.iml
-/javax.jms/javax.jms-api.iml
+**/target/*
+/target
