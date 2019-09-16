@@ -14,7 +14,7 @@
    
     <artifactId>jandex</artifactId>
 	
-    <name>Java Annotation Indexer</name>
+    <name>jandex</name>
     <packaging>jar</packaging>
 
     <licenses>

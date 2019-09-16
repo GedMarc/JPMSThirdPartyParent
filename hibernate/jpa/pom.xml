@@ -6,15 +6,16 @@
         <artifactId>hibernate-parent</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
+
     <groupId>com.jwebmp.thirdparty.hibernate</groupId>
     <artifactId>jpa-parent</artifactId>
     <packaging>pom</packaging>
 
-    <name>JPA</name>
+    <name>javax.jpa.parent</name>
     <description>JPMS Module-Info's for a few of the Jakarta Libraries just until they add them in themselves</description>
 
-<modules>
-<module>api</module>
-</modules>
+    <modules>
+        <module>api</module>
+    </modules>
 
 </project>

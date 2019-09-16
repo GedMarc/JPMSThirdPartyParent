@@ -10,7 +10,7 @@
     <artifactId>cache-annotations-ri</artifactId>
     <packaging>pom</packaging>
 
-    <name>JSR107 Annotations RI</name>
+    <name>javax.cache.annotations</name>
 
     <modules>
         <module>cache-annotations-ri-common</module>

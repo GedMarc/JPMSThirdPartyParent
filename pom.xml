@@ -44,6 +44,8 @@
                 <module>uadetector</module>
 				<module>servlet</module>
 				<module>JCache</module>
+				<module>xnio</module>
+				<module>jacc</module>
 	<!--			<module>msvcore</module>
 				<module>isorelax</module>
 				<module>xsdlib</module>

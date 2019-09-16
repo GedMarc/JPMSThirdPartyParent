@@ -30,7 +30,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty.hibernate</groupId>
+            <groupId>com.jwebmp.thirdparty</groupId>
             <artifactId>jboss-logmanager</artifactId>
         </dependency>
 
@@ -76,8 +76,10 @@
             <artifactId>javax.inject</artifactId>
         </dependency>
 
-
-
+        <dependency>
+            <groupId>com.jwebmp.thirdparty</groupId>
+            <artifactId>javax.security.jacc</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>antlr</groupId>
@@ -97,12 +99,6 @@
             <artifactId>ant</artifactId>
             <version>1.10.7</version>
             <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.security.jacc</groupId>
-            <artifactId>javax.security.jacc-api</artifactId>
-            <version>1.6</version>
-            <optional>true</optional>
         </dependency>
 
 

@@ -5,7 +5,7 @@ module org.hibernate.orm.core {
 	requires java.persistence;
 
 	requires org.hibernate.commons.annotations;
-	requires jboss.logging;
+	requires org.jboss.logging;
 	requires jandex;
 	requires com.fasterxml.classmate;
 	requires javassist;
@@ -16,6 +16,8 @@ module org.hibernate.orm.core {
 	requires java.instrument;
 	requires java.management;
 	requires dom4j;
+
+	requires java.compiler;
 
 	requires static jakarta.enterprise.cdi;
 	requires java.validation;
@@ -284,6 +286,42 @@ module org.hibernate.orm.core {
 	opens org.hibernate.jpa;
 	opens org.hibernate.xsd.cfg;
 	opens org.hibernate.xsd.mapping;
+
+	uses org.hibernate.action.spi.AfterTransactionCompletionProcess;
+	uses org.hibernate.action.spi.BeforeTransactionCompletionProcess;
+	uses org.hibernate.action.spi.Executable;
+	uses org.hibernate.boot.archive.spi.ArchiveContext;
+	uses org.hibernate.boot.archive.spi.ArchiveDescriptor;
+	uses org.hibernate.boot.archive.spi.ArchiveEntry;
+	uses org.hibernate.boot.archive.spi.ArchiveEntryHandler;
+	uses org.hibernate.boot.archive.spi.JarFileEntryUrlAdjuster;
+	uses org.hibernate.boot.archive.spi.InputStreamAccess;
+	uses org.hibernate.boot.jaxb.spi.Binder;
+	uses org.hibernate.boot.jaxb.hbm.spi.SimpleValueTypeInfo;
+	uses org.hibernate.boot.jaxb.hbm.spi.AttributeMapping;
+	uses org.hibernate.boot.model.convert.spi.ConverterDescriptor;
+	uses org.hibernate.boot.model.convert.spi.AutoApplicableConverterDescriptor;
+	uses org.hibernate.boot.model.convert.spi.JpaAttributeConverterCreationContext;
+	uses org.hibernate.boot.model.convert.spi.ConverterAutoApplyHandler;
+	uses org.hibernate.boot.model.process.spi.ManagedResources;
+	uses org.hibernate.boot.model.source.spi.RelationalValueSource;
+	uses org.hibernate.boot.model.source.spi.AttributeSource;
+	uses org.hibernate.boot.model.source.spi.AttributeSourceContainer;
+	uses org.hibernate.boot.model.source.spi.ColumnSource;
+	uses org.hibernate.boot.model.source.spi.HibernateTypeSource;
+	uses org.hibernate.boot.model.source.spi.LocalMetadataBuildingContext;
+	uses org.hibernate.boot.model.source.spi.EmbeddableMapping;
+	uses org.hibernate.boot.model.source.spi.FilterSource;
+	uses org.hibernate.boot.model.source.spi.SizeSource;
+	uses org.hibernate.boot.model.source.spi.EmbeddableSource;
+	uses org.hibernate.boot.model.source.spi.PluralAttributeSource;
+	uses org.hibernate.boot.model.source.spi.RelationalValueSourceContainer;
+	uses org.hibernate.boot.model.source.spi.TableSpecificationSource;
+	uses org.hibernate.boot.model.source.spi.TableSource;
+	uses org.hibernate.boot.model.source.spi.DerivedValueSource;
+	uses org.hibernate.boot.model.source.spi.EntitySource;
+
+
 
 	provides javax.persistence.spi.PersistenceProvider with org.hibernate.jpa.HibernatePersistenceProvider;
 }

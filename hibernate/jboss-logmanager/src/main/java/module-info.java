@@ -1,8 +1,12 @@
-module jboss.logging {
+module org.jboss.logging {
+
 	requires java.logging;
 	requires java.xml;
-	requires java.desktop;
+	requires static java.desktop;
 	requires java.json;
+
+	requires static java.compiler;
+
 	exports org.jboss.logmanager;
 	exports org.jboss.logmanager.config;
 	exports org.jboss.logmanager.errormanager;
@@ -13,4 +17,5 @@ module jboss.logging {
 	exports org.jboss.logging.annotations;
 
 	provides java.util.logging.LogManager with org.jboss.logmanager.LogManager;
+	provides javax.annotation.processing.Processor with org.jboss.logging.processor.apt.LoggingToolsProcessor;
 }

@@ -11,7 +11,7 @@
     <artifactId>cache-ri-impl</artifactId>
     <packaging>jar</packaging>
 
-    <name>JSR107 Cache RI</name>
+    <name>javax.cache.imp</name>
 
     <dependencies>
         <dependency>

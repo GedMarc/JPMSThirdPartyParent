@@ -24,7 +24,7 @@
 
     <artifactId>jakarta.persistence-api</artifactId>
 
-    <name>Jakarta Persistence API</name>
+    <name>javax.jpa.api</name>
     <url>https://github.com/eclipse-ee4j/jpa-api</url>
 
     <scm>

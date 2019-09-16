@@ -12,7 +12,8 @@
     <artifactId>cache-ri-parent</artifactId>
     <packaging>pom</packaging>
 
-    <name>JSR107 RI</name>
+    <name>javax.cache.ri</name>
+
     <url>https://github.com/jsr107/RI</url>
 
     <properties>
