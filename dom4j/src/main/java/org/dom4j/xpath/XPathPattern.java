@@ -21,7 +21,7 @@ import org.jaxen.SimpleNamespaceContext;
 import org.jaxen.SimpleVariableContext;
 import org.jaxen.VariableContext;
 import org.jaxen.XPathFunctionContext;
-import org.jaxen.dom4j.DocumentNavigator;
+import org.jaxen.dom.DocumentNavigator;
 import org.jaxen.pattern.Pattern;
 import org.jaxen.pattern.PatternParser;
 import org.jaxen.saxpath.SAXPathException;
@@ -116,8 +116,8 @@ public class XPathPattern implements org.dom4j.rule.Pattern {
 
     protected ContextSupport getContextSupport() {
         return new ContextSupport(new SimpleNamespaceContext(),
-                XPathFunctionContext.getInstance(),
-                new SimpleVariableContext(), DocumentNavigator.getInstance());
+                                  XPathFunctionContext.getInstance(),
+                                  new SimpleVariableContext(), DocumentNavigator.getInstance());
     }
 
     protected void handleJaxenException(JaxenException exception)

@@ -73,6 +73,7 @@ public class JPAMetaModelEntityProcessor extends AbstractProcessor {
 	@Override
 	public void init(ProcessingEnvironment env) {
 		super.init( env );
+		System.out.println("JPA Metamodel Starting");
 		context = new Context( env );
 		context.logMessage(
 				Diagnostic.Kind.NOTE, "Hibernate JPA 2 Static-Metamodel Generator " + Version.getVersionString()

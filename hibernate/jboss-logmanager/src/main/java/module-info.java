@@ -1,5 +1,9 @@
 module org.jboss.logging {
 
+	exports org.jboss.logging.processor.apt;
+	exports org.jboss.logging.processor.apt.report;
+	exports org.jboss.logging.processor.model;
+
 	requires java.logging;
 	requires java.xml;
 	requires static java.desktop;

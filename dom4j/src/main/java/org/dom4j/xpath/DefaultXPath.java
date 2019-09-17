@@ -27,7 +27,7 @@ import org.jaxen.NamespaceContext;
 import org.jaxen.SimpleNamespaceContext;
 import org.jaxen.VariableContext;
 import org.jaxen.XPath;
-import org.jaxen.dom4j.Dom4jXPath;
+import org.jaxen.dom.DOMXPath;
 
 /**
  * <p>
@@ -350,7 +350,7 @@ public class DefaultXPath implements org.dom4j.XPath, NodeFilter, Serializable {
 
     protected static XPath parse(String text) {
         try {
-            return new Dom4jXPath(text);
+            return new DOMXPath(text);
         } catch (JaxenException e) {
             throw new InvalidXPathException(text, e.getMessage());
         } catch (RuntimeException e) {

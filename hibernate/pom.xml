@@ -11,7 +11,7 @@
     <artifactId>hibernate-parent</artifactId>
     <packaging>pom</packaging>
 
-    <name>hibernate Parent</name>
+    <name>hibernate-parent</name>
     <description>JPMS Module-Info's for a few of the Jakarta Libraries. These will be removed as time goes by</description>
     
 	<modules>
@@ -19,6 +19,9 @@
         <module>jpa</module>
 		<module>commons-annotations</module>
 		<module>jboss-logmanager</module>
+		<module>metamodel-generator</module>
+		<module>hibernate-jcache</module>
+		<module>hibernate-validator</module>
 	</modules>
 	
 </project>

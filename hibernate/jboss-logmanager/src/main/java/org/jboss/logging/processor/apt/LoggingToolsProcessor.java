@@ -98,6 +98,7 @@ public class LoggingToolsProcessor extends AbstractProcessor {
      * Default constructor.
      */
     public LoggingToolsProcessor() {
+	    System.out.println("JBoss Logging Tools Processing...");
         this.generators = new ArrayList<>();
         this.supportedAnnotations = createSupportedAnnotations(
                 Cause.class,
@@ -118,7 +119,6 @@ public class LoggingToolsProcessor extends AbstractProcessor {
                 ValidIdRange.class,
                 ValidIdRanges.class
         );
-	    System.out.println("JBoss Logging Tools Processing...");
     }
 
     @Override

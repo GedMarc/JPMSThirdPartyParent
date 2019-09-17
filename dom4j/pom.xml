@@ -21,14 +21,11 @@
         </dependency>
 
         <dependency>
-            <groupId>jaxen</groupId>
+            <groupId>com.jwebmp.thirdparty</groupId>
             <artifactId>jaxen</artifactId>
-            <version>1.2.0</version>
             <optional>true</optional>
             <scope>compile</scope>
         </dependency>
-
-
     </dependencies>
 
 </project>
