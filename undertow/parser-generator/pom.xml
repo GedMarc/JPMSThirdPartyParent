@@ -33,20 +33,15 @@
     <name>Undertow Parser Generator</name>
     <description>An annotation processor that is used to generate the HTTP parser</description>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.jboss.classfilewriter</groupId>
-            <artifactId>jboss-classfilewriter</artifactId>
-        </dependency>
-
-    </dependencies>
-
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
+                    <source>12</source>
+                    <target>12</target>
+                    <release>12</release>
                     <compilerArgument>-proc:none</compilerArgument>
                 </configuration>
             </plugin>

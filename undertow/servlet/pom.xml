@@ -47,21 +47,47 @@
         <dependency>
             <groupId>com.jwebmp.thirdparty.undertow</groupId>
             <artifactId>undertow-core</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.jwebmp.thirdparty</groupId>
             <artifactId>jboss-logmanager</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.jwebmp.thirdparty</groupId>
             <artifactId>javax.servlet-api</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
             <groupId>jakarta.annotation</groupId>
             <artifactId>jakarta.annotation-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jwebmp.thirdparty</groupId>
+            <artifactId>jboss-logmanager</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jwebmp.thirdparty</groupId>
+            <artifactId>xnio-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jwebmp.thirdparty</groupId>
+            <artifactId>xnio-nio</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jwebmp.thirdparty.undertow</groupId>
+            <artifactId>undertow-parser-generator</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
@@ -80,18 +106,36 @@
         </testResources>
 
         <plugins>
+
+
             <plugin>
-                <groupId>org.bitstrings.maven.plugins</groupId>
-                <artifactId>dependencypath-maven-plugin</artifactId>
-                <version>1.1.1</version>
-                <executions>
-                    <execution>
-                        <id>set-all</id>
-                        <goals>
-                            <goal>set</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <release>12</release>
+                    <source>12</source>
+                    <target>12</target>
+                    <annotationProcessorPaths>
+                        <annotationProcessorPath>
+                            <groupId>com.jwebmp.thirdparty.undertow</groupId>
+                            <artifactId>undertow-parser-generator</artifactId>
+                            <version>${project.version}</version>
+                        </annotationProcessorPath>
+                        <annotationProcessorPath>
+                            <groupId>com.jwebmp.thirdparty</groupId>
+                            <artifactId>jboss-logmanager</artifactId>
+                            <version>${project.version}</version>
+                        </annotationProcessorPath>
+                    </annotationProcessorPaths>
+                    <annotationProcessors>
+                        <annotationProcessor>org.jboss.logging.processor.apt.LoggingToolsProcessor</annotationProcessor>
+                        <annotationProcessor>io.undertow.annotationprocessor.HttpParserAnnotationProcessor</annotationProcessor>
+                    </annotationProcessors>
+                    <compilerArguments>
+                        <AaddGeneratedAnnotation>false</AaddGeneratedAnnotation>
+                        <Adebug>true</Adebug>
+                    </compilerArguments>
+                </configuration>
             </plugin>
 
         </plugins>

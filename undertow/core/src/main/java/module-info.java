@@ -5,10 +5,11 @@ module undertow.core {
 	requires static java.security.jgss;
 
 	requires static alpn.api;
-//	requires static io.undertow.parser.generator;
+	requires static io.undertow.parser.generator;
 	requires static jdk.unsupported;
 	requires static java.naming;
 	requires static java.sql;
+	requires java.compiler;
 
 	exports io.undertow;
 	exports io.undertow.util;
@@ -59,10 +60,17 @@ module undertow.core {
 	exports io.undertow.websockets.core.function;
 	exports io.undertow.websockets.core.protocol;
 	exports io.undertow.websockets;
+	exports io.undertow.websockets.core.protocol.version08;
+	exports io.undertow.websockets.core.protocol.version13;
+	exports io.undertow.websockets.core.protocol.version07;
+	exports io.undertow.websockets.extensions;
 
 
 	uses io.undertow.attribute.ExchangeAttributeBuilder;
 	uses io.undertow.predicate.PredicateBuilder;
 	uses io.undertow.server.handlers.builder.HandlerBuilder;
+
+
+	opens io.undertow to org.jboss.logging;
 
 }

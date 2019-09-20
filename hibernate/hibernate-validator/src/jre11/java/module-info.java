@@ -7,6 +7,7 @@ module org.hibernate.validator {
 	requires java.scripting;
 	requires javax.el;
 	requires java.desktop;
+	requires java.compiler;
 
 	exports org.hibernate.validator;
 

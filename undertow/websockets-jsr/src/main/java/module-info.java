@@ -5,13 +5,16 @@ module undertow.websockets.jsr {
 	exports io.undertow.websockets.jsr.annotated;
 	//exports io.undertow.websockets.jsr.handshake;
 
-
 	requires javax.websocket.api;
 	requires undertow.servlet;
 
 	requires undertow.core;
 	requires xnio.api;
 	requires javax.servlet.api;
+	requires org.jboss.logging;
+	requires java.annotation;
+
+	opens io.undertow.websockets.jsr to org.jboss.logging,undertow.servlet;
 
 	uses io.undertow.websockets.jsr.WebsocketClientSslProvider;
 
