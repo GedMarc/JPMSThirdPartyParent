@@ -1,4 +1,5 @@
 module xnio {
+	exports org.xnio.nio;
 	requires xnio.api;
 	requires org.jboss.logging;
 	requires java.compiler;

@@ -52,12 +52,6 @@
 
         <dependency>
             <groupId>com.jwebmp.thirdparty</groupId>
-            <artifactId>jboss-logmanager</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>${project.version}</version>
         </dependency>

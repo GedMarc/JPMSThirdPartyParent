@@ -15,5 +15,7 @@ module xnio.api {
 	requires java.logging;
 	requires java.compiler;
 
+	opens  org.xnio._private to org.jboss.logging;
+
 	uses org.xnio.XnioProvider;
 }

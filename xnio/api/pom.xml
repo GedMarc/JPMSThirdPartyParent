@@ -56,8 +56,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <inherited>true</inherited>
                 <configuration>
+                    <source>12</source>
+                    <target>12</target>
+                    <release>12</release>
                     <annotationProcessorPaths>
                         <annotationProcessorPath>
                             <groupId>com.jwebmp.thirdparty</groupId>

@@ -48,6 +48,7 @@
 				<module>jacc</module>
 				<module>jaxen</module>
 				<module>undertow</module>
+				<module>commons</module>
 	<!--			<module>msvcore</module>
 				<module>isorelax</module>
 				<module>xsdlib</module>
