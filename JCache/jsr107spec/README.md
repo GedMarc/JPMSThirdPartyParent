@@ -30,8 +30,8 @@ Maven snippet:
     <dependency>
       <groupId>javax.cache</groupId>
       <artifactId>cache-api</artifactId>
-      <version>1.0.0</version>
-    </dependency>
+      <version>1.0.0</version><type>jar</type>
+            </dependency>
 
 
 Maven Central Releases
@@ -46,8 +46,8 @@ or use the following Maven snippet:
     <dependency>
       <groupId>javax.cache</groupId>
       <artifactId>cache-api</artifactId>
-      <version>1.1.1</version>
-    </dependency>
+      <version>1.1.1</version><type>jar</type>
+            </dependency>
 
 Javadoc
 -------

@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.jwebmp.thirdparty</groupId>
+        <groupId>com.jwebmp.jpms.thirdparty</groupId>
         <artifactId>third-party-modules</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
@@ -222,9 +222,9 @@
 
   <dependencies>
  <!--   <dependency>
-        <groupId>com.jwebmp.thirdparty</groupId>
+        <groupId>com.jwebmp.jpms.thirdparty</groupId>
         <artifactId>dom4j</artifactId>
-      <optional>true</optional>
-    </dependency>-->
+      <optional>true</optional><type>jar</type>
+            </dependency>-->
   </dependencies>
 </project>

@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.jwebmp.thirdparty.hibernate</groupId>
+        <groupId>com.jwebmp.jpms.thirdparty.hibernate</groupId>
         <artifactId>hibernate-parent</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
@@ -15,81 +15,81 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.jwebmp.thirdparty.hibernate</groupId>
-            <artifactId>jakarta.persistence-api</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty.hibernate</groupId>
+            <artifactId>jakarta.persistence-api</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
-            <artifactId>javax.transaction</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>javax.transaction</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty.hibernate</groupId>
-            <artifactId>hibernate-commons-annotations</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty.hibernate</groupId>
+            <artifactId>hibernate-commons-annotations</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
-            <artifactId>jboss-logmanager</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>jboss-logmanager</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
-            <artifactId>jandex</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>jandex</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
-            <artifactId>classmate</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>classmate</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
-            <artifactId>javassist</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>javassist</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
-            <artifactId>jakarta.xml.bind-api</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId><type>jar</type>
+            </dependency>
 
       <dependency>
-          <groupId>com.jwebmp.thirdparty</groupId>
-          <artifactId>dom4j</artifactId>
-        </dependency>
+          <groupId>com.jwebmp.jpms.thirdparty</groupId>
+          <artifactId>dom4j</artifactId><type>jar</type>
+            </dependency>
 
 
         <dependency>
             <groupId>net.bytebuddy</groupId>
-            <artifactId>byte-buddy</artifactId>
-        </dependency>
+            <artifactId>byte-buddy</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty.gee4j</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>jakarta.enterprise.cdi-api</artifactId>
-            <optional>true</optional>
-        </dependency>
+            <optional>true</optional><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
-            <artifactId>javax.inject</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>javax.inject</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
-            <artifactId>javax.security.jacc</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>javax.security.jacc</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
             <groupId>antlr</groupId>
-            <artifactId>antlr</artifactId>
-        </dependency>
+            <artifactId>antlr</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
             <groupId>org.apache.ant</groupId>
-            <artifactId>ant</artifactId>
-        </dependency>
+            <artifactId>ant</artifactId><type>jar</type>
+            </dependency>
 
     </dependencies>
 

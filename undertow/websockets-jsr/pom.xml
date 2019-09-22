@@ -24,7 +24,7 @@
 
 
     <parent>
-        <groupId>com.jwebmp.thirdparty.undertow</groupId>
+        <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
         <artifactId>undertow-parent</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
@@ -42,48 +42,48 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.jwebmp.thirdparty.undertow</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
             <artifactId>undertow-core</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+            <version>${project.version}</version><type>jar</type>
+            </dependency>
         <dependency>
-            <groupId>com.jwebmp.thirdparty.undertow</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
             <artifactId>undertow-servlet</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+            <version>${project.version}</version><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>jakarta.websocket-api</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+            <version>${project.version}</version><type>jar</type>
+            </dependency>
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>jboss-logmanager</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+            <version>${project.version}</version><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>xnio-api</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+            <version>${project.version}</version><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>xnio-nio</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+            <version>${project.version}</version><type>jar</type>
+            </dependency>
         <dependency>
-            <groupId>com.jwebmp.thirdparty.undertow</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
             <artifactId>undertow-parser-generator</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+            <version>${project.version}</version><type>jar</type>
+            </dependency>
 
         <dependency>
             <groupId>jakarta.annotation</groupId>
-            <artifactId>jakarta.annotation-api</artifactId>
-        </dependency>
+            <artifactId>jakarta.annotation-api</artifactId><type>jar</type>
+            </dependency>
         <!-- Test dependencies -->
     </dependencies>
 
@@ -110,12 +110,12 @@
                     <target>12</target>
                     <annotationProcessorPaths>
                         <annotationProcessorPath>
-                            <groupId>com.jwebmp.thirdparty.undertow</groupId>
+                            <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
                             <artifactId>undertow-parser-generator</artifactId>
                             <version>${project.version}</version>
                         </annotationProcessorPath>
                         <annotationProcessorPath>
-                            <groupId>com.jwebmp.thirdparty</groupId>
+                            <groupId>com.jwebmp.jpms.thirdparty</groupId>
                             <artifactId>jboss-logmanager</artifactId>
                             <version>${project.version}</version>
                         </annotationProcessorPath>

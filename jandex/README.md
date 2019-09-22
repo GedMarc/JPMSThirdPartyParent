@@ -59,8 +59,8 @@ Just add the following to your pom:
  <dependency>
      <groupId>org.jboss</groupId>
      <artifactId>jandex</artifactId>
-     <version>2.0.1.Final</version>
- </dependency>
+     <version>2.0.1.Final</version><type>jar</type>
+            </dependency>
 ```
 
 ## Using the Ant task to index your project

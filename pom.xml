@@ -8,7 +8,7 @@
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.jwebmp.thirdparty</groupId>
+    <groupId>com.jwebmp.jpms.thirdparty</groupId>
     <artifactId>third-party-modules</artifactId>
     <version>0.0.0_0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -50,6 +50,7 @@
 				<module>undertow</module>
 				<module>commons</module>
 				<module>hazelcast</module>
+				<module>guava</module>
 	<!--			<module>msvcore</module>
 				<module>isorelax</module>
 				<module>xsdlib</module>

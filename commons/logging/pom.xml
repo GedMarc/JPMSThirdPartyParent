@@ -24,7 +24,7 @@ under the License.
     - available unit tests.
     -->
   <parent>
-    <groupId>com.jwebmp.jpms.commons</groupId>
+    <groupId>com.jwebmp.jpms.thirdparty.commons</groupId>
     <artifactId>commons-parent</artifactId>
     <version>0.0.0_0-SNAPSHOT</version>
   </parent>
@@ -179,10 +179,10 @@ under the License.
   
   <dependencies>
     <dependency>
-      <groupId>com.jwebmp.thirdparty</groupId>
+      <groupId>com.jwebmp.jpms.thirdparty</groupId>
       <artifactId>javax.servlet-api</artifactId>
-      <optional>true</optional>
-    </dependency>
+      <optional>true</optional><type>jar</type>
+            </dependency>
   </dependencies>
 
   <properties>

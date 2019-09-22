@@ -62,17 +62,17 @@
     <dependency>
        <groupId>org.apache.poi</groupId>
        <artifactId>poi</artifactId>
-       <version>@VERSION@</version>
-    </dependency>
+       <version>@VERSION@</version><type>jar</type>
+            </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-scratchpad</artifactId>
-      <version>@VERSION@</version>
-    </dependency>
+      <version>@VERSION@</version><type>jar</type>
+            </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-ooxml</artifactId>
-      <version>@VERSION@</version>
-    </dependency>
+      <version>@VERSION@</version><type>jar</type>
+            </dependency>
   </dependencies>
 </project>

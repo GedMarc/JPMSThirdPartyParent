@@ -7,7 +7,7 @@
 
     
     <parent>
-        <groupId>com.jwebmp.thirdparty</groupId>
+        <groupId>com.jwebmp.jpms.thirdparty</groupId>
         <artifactId>third-party-modules</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>

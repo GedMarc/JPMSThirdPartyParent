@@ -3,12 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.jwebmp.thirdparty.hibernate</groupId>
+        <groupId>com.jwebmp.jpms.thirdparty.hibernate</groupId>
         <artifactId>hibernate-parent</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.jwebmp.thirdparty</groupId>
+    <groupId>com.jwebmp.jpms.thirdparty</groupId>
     <artifactId>jboss-logmanager</artifactId>
     <packaging>jar</packaging>
 
@@ -18,8 +18,8 @@
     <dependencies>
         <dependency>
             <groupId>javax.json</groupId>
-            <artifactId>javax.json-api</artifactId>
-        </dependency>
+            <artifactId>javax.json-api</artifactId><type>jar</type>
+            </dependency>
 
     </dependencies>
 

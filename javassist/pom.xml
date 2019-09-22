@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.jwebmp.thirdparty</groupId>
+        <groupId>com.jwebmp.jpms.thirdparty</groupId>
         <artifactId>third-party-modules</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
@@ -118,8 +118,8 @@
       <version>${java.version}</version>
       <scope>system</scope>
       <optional>true</optional>
-      <systemPath>${java.home}/lib/jrt-fs.jar</systemPath>
-    </dependency>
+      <systemPath>${java.home}/lib/jrt-fs.jar</systemPath><type>jar</type>
+            </dependency>
   </dependencies>
   <build>
     <sourceDirectory>src/main</sourceDirectory>

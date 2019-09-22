@@ -65,8 +65,8 @@ Alternatively you can pull it from the central Maven repositories:
 <dependency>
   <groupId>commons-logging</groupId>
   <artifactId>commons-logging</artifactId>
-  <version>1.2</version>
-</dependency>
+  <version>1.2</version><type>jar</type>
+            </dependency>
 ```
 
 Contributing
