@@ -49,6 +49,7 @@
 				<module>jaxen</module>
 				<module>undertow</module>
 				<module>commons</module>
+				<module>hazelcast</module>
 	<!--			<module>msvcore</module>
 				<module>isorelax</module>
 				<module>xsdlib</module>

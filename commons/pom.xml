@@ -1,0 +1,24 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+          <groupId>com.jwebmp.thirdparty</groupId>
+        <artifactId>third-party-modules</artifactId>
+        <version>0.0.0_0-SNAPSHOT</version>
+    </parent>
+	
+	<groupId>com.jwebmp.jpms.commons</groupId>
+    <artifactId>commons-parent</artifactId>
+    <packaging>pom</packaging>
+
+    <name>commons.parent</name>
+    <description>JPMS Module-Info's for a few of the Jakarta Libraries. These will be removed as time goes by</description>
+    
+	<modules>
+        <module>codec</module>
+		<module>logging</module>
+		<module>poi</module>
+
+	</modules>
+	
+</project>
