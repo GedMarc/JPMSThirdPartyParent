@@ -46,7 +46,7 @@ public final class FileBackedOutputStream extends OutputStream {
 
   private OutputStream out;
   private MemoryOutput memory;
-  private @Nullable File file;
+  private  File file;
 
   /** ByteArrayOutputStream that exposes its internals. */
   private static class MemoryOutput extends ByteArrayOutputStream {

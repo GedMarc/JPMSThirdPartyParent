@@ -276,7 +276,7 @@ public interface Graph<N> extends BaseGraph<N> {
    * <p>A reference implementation of this is provided by {@link AbstractGraph#equals(Object)}.
    */
   @Override
-  boolean equals(@Nullable Object object);
+  boolean equals( Object object);
 
   /**
    * Returns the hash code for this graph. The hash code of a graph is defined as the hash code of

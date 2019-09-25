@@ -169,14 +169,14 @@ public class TreeBasedTable<R, C, V> extends StandardRowSortedTable<R, C, V> {
   }
 
   private class TreeRow extends Row implements SortedMap<C, V> {
-    final @Nullable C lowerBound;
-    final @Nullable C upperBound;
+    final  C lowerBound;
+    final  C upperBound;
 
     TreeRow(R rowKey) {
       this(rowKey, null, null);
     }
 
-    TreeRow(R rowKey, @Nullable C lowerBound, @Nullable C upperBound) {
+    TreeRow(R rowKey,  C lowerBound,  C upperBound) {
       super(rowKey);
       this.lowerBound = lowerBound;
       this.upperBound = upperBound;
@@ -201,7 +201,7 @@ public class TreeBasedTable<R, C, V> extends StandardRowSortedTable<R, C, V> {
       return cmp.compare(a, b);
     }
 
-    boolean rangeContains(@Nullable Object o) {
+    boolean rangeContains( Object o) {
       return o != null
           && (lowerBound == null || compare(lowerBound, o) <= 0)
           && (upperBound == null || compare(upperBound, o) > 0);
@@ -243,7 +243,7 @@ public class TreeBasedTable<R, C, V> extends StandardRowSortedTable<R, C, V> {
       return backingRowMap().lastKey();
     }
 
-    transient @Nullable SortedMap<C, V> wholeRow;
+    transient  SortedMap<C, V> wholeRow;
 
     /*
      * If the row was previously empty, we check if there's a new row here every
@@ -327,7 +327,7 @@ public class TreeBasedTable<R, C, V> extends StandardRowSortedTable<R, C, V> {
             comparator);
 
     return new AbstractIterator<C>() {
-      @Nullable C lastValue;
+       C lastValue;
 
       @Override
       protected C computeNext() {

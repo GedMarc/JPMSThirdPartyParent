@@ -369,7 +369,7 @@ public abstract class HashCode {
    * to protect against <a href="http://en.wikipedia.org/wiki/Timing_attack">timing attacks</a>.
    */
   @Override
-  public final boolean equals(@Nullable Object object) {
+  public final boolean equals( Object object) {
     if (object instanceof HashCode) {
       HashCode that = (HashCode) object;
       return bits() == that.bits() && equalsSameBits(that);

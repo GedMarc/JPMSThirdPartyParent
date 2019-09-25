@@ -49,7 +49,7 @@ public final class ExecutionList {
    * RunnableExecutorPair#next} field.
    */
   @GuardedBy("this")
-  private @Nullable RunnableExecutorPair runnables;
+  private  RunnableExecutorPair runnables;
 
   @GuardedBy("this")
   private boolean executed;
@@ -153,7 +153,7 @@ public final class ExecutionList {
   private static final class RunnableExecutorPair {
     final Runnable runnable;
     final Executor executor;
-    @Nullable RunnableExecutorPair next;
+     RunnableExecutorPair next;
 
     RunnableExecutorPair(Runnable runnable, Executor executor, RunnableExecutorPair next) {
       this.runnable = runnable;

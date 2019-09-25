@@ -179,7 +179,7 @@ public enum CaseFormat {
     }
 
     @Override
-    public boolean equals(@Nullable Object object) {
+    public boolean equals( Object object) {
       if (object instanceof StringConverter) {
         StringConverter that = (StringConverter) object;
         return sourceFormat.equals(that.sourceFormat) && targetFormat.equals(that.targetFormat);

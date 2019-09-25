@@ -319,7 +319,7 @@ public final class Bytes {
     }
 
     @Override
-    public boolean equals(@Nullable Object object) {
+    public boolean equals( Object object) {
       if (object == this) {
         return true;
       }

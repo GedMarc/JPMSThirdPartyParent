@@ -69,7 +69,7 @@ final class ImmutableEnumMap<K extends Enum<K>, V> extends IteratorBasedImmutabl
   }
 
   @Override
-  public boolean containsKey(@Nullable Object key) {
+  public boolean containsKey( Object key) {
     return delegate.containsKey(key);
   }
 

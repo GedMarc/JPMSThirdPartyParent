@@ -23,6 +23,7 @@ module org.hibernate.orm.core {
 	requires java.validation;
 	requires javax.inject;
 
+	exports org.hibernate.engine.spi;
 
 	requires static ant;
 	requires static javax.security.jacc.api;
@@ -30,6 +31,7 @@ module org.hibernate.orm.core {
 	exports org.hibernate;
 	exports org.hibernate.action.internal;
 	exports org.hibernate.action.spi;
+	exports org.hibernate.query.criteria.internal.path;
 	//exports org.hibernate.internal;
 	//exports org.hibernate.internal.build;
 	//exports org.hibernate.internal.log;
@@ -122,7 +124,6 @@ module org.hibernate.orm.core {
 
 	exports org.hibernate.ejb;
 	exports org.hibernate.engine;
-	exports org.hibernate.engine.spi;
 	//exports org.hibernate.engine.internal;
 	exports org.hibernate.engine.config.spi;
 	//exports org.hibernate.engine.config.internal;
@@ -745,4 +746,6 @@ module org.hibernate.orm.core {
 
 
 	provides javax.persistence.spi.PersistenceProvider with org.hibernate.jpa.HibernatePersistenceProvider;
+
+	opens org.hibernate.cache.spi.entry;
 }

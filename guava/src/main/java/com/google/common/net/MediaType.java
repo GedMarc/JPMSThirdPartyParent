@@ -1022,7 +1022,7 @@ public final class MediaType {
   }
 
   @Override
-  public boolean equals(@Nullable Object obj) {
+  public boolean equals( Object obj) {
     if (obj == this) {
       return true;
     } else if (obj instanceof MediaType) {

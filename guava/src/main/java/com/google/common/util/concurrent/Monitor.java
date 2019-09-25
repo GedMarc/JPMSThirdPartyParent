@@ -313,7 +313,7 @@ public final class Monitor {
 
     /** The next active guard */
     @GuardedBy("monitor.lock")
-    @Nullable
+
     Guard next;
 
     protected Guard(Monitor monitor) {

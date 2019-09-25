@@ -56,7 +56,7 @@ public abstract class ForwardingSet<E> extends ForwardingCollection<E> implement
   protected abstract Set<E> delegate();
 
   @Override
-  public boolean equals(@Nullable Object object) {
+  public boolean equals( Object object) {
     return object == this || delegate().equals(object);
   }
 
@@ -84,7 +84,7 @@ public abstract class ForwardingSet<E> extends ForwardingCollection<E> implement
    *
    * @since 7.0
    */
-  protected boolean standardEquals(@Nullable Object object) {
+  protected boolean standardEquals( Object object) {
     return Sets.equalsImpl(this, object);
   }
 

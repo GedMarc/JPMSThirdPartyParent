@@ -158,7 +158,7 @@ class Element extends AccessibleObject implements Member {
   }
 
   @Override
-  public boolean equals(@Nullable Object obj) {
+  public boolean equals( Object obj) {
     if (obj instanceof Element) {
       Element that = (Element) obj;
       return getOwnerType().equals(that.getOwnerType()) && member.equals(that.member);

@@ -64,7 +64,7 @@ final class CombinedFuture<V> extends AggregateFuture<Object, V> {
     }
 
     @Override
-    void collectOneValue(boolean allMustSucceed, int index, @Nullable Object returnValue) {}
+    void collectOneValue(boolean allMustSucceed, int index,  Object returnValue) {}
 
     @Override
     void handleAllCompleted() {

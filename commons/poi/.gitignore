@@ -1,49 +1,24 @@
-classes
-workbook.xls
-bak
-build.number
-*.el
-scripts
-untitled1.jpx
-log*.*
-*.log
-
-forrest.properties
-compile-lib/
-ooxml-lib/
-ooxml-testlib/
-
-# Eclipse
-/bin
-.settings
-
-# Tests
-junit*.properties
-TEST-org.apache.poi*.xml
-
-# Sonar
-.sonar
-sonar/main/src/
-sonar/ooxml/src/
-sonar/scratchpad/src/
-sonar/ooxml-schema-security/src/
-sonar/examples/src/
-sonar/excelant/src/
-sonar/target
-sonar/*/target
-
-# IntelliJ
+/build/
+/dist/
+Thumbs.db
+nbproject/build-native.xml~
+javadoc.zip
+persistence.xml
+/javadoc/
+/.jacocoverage/
+/build
+/target/
 /out/
-.idea
+/**/.sonar/
+**.jacocoverage/
+**/*.iml
 *.iml
-*.iws
-*.ipr
-
-# Gradle
-.gradle
-
-# Ant
-.ant-targets-build.xml
-build
-dist
-lib/
+*.versionsBackup
+*.log
+*.tlog
+/.idea/
+*.project
+**/*.project
+**/*.classpath
+**/.settings
+/.settings

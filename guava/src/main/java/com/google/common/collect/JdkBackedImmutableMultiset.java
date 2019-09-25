@@ -61,7 +61,7 @@ final class JdkBackedImmutableMultiset<E> extends ImmutableMultiset<E> {
   }
 
   @Override
-  public int count(@Nullable Object element) {
+  public int count( Object element) {
     return delegateMap.getOrDefault(element, 0);
   }
 

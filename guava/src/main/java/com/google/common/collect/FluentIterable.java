@@ -321,7 +321,7 @@ public abstract class FluentIterable<E> implements Iterable<E> {
    * @since 20.0
    */
   @Beta
-  public static <E> FluentIterable<E> of(@Nullable E element, E... elements) {
+  public static <E> FluentIterable<E> of( E element, E... elements) {
     return from(Lists.asList(element, elements));
   }
 
@@ -352,7 +352,7 @@ public abstract class FluentIterable<E> implements Iterable<E> {
    *
    * <p><b>{@code Stream} equivalent:</b> {@code stream.anyMatch(Predicate.isEqual(target))}.
    */
-  public final boolean contains(@Nullable Object target) {
+  public final boolean contains( Object target) {
     return Iterables.contains(getDelegate(), target);
   }
 
@@ -822,7 +822,7 @@ public abstract class FluentIterable<E> implements Iterable<E> {
    * @throws IndexOutOfBoundsException if {@code position} is negative or greater than or equal to
    *     the size of this fluent iterable
    */
-  // TODO(kevinb): add @Nullable?
+  // TODO(kevinb): add ?
   public final E get(int position) {
     return Iterables.get(getDelegate(), position);
   }

@@ -680,18 +680,18 @@ public abstract class ImmutableMap<K, V> implements Map<K, V>, Serializable {
   }
 
   @Override
-  public boolean containsKey(@Nullable Object key) {
+  public boolean containsKey( Object key) {
     return get(key) != null;
   }
 
   @Override
-  public boolean containsValue(@Nullable Object value) {
+  public boolean containsValue( Object value) {
     return values().contains(value);
   }
 
   // Overriding to mark it Nullable
   @Override
-  public abstract V get(@Nullable Object key);
+  public abstract V get( Object key);
 
   /**
    * @since 21.0 (but only since 23.5 in the Android <a
@@ -699,7 +699,7 @@ public abstract class ImmutableMap<K, V> implements Map<K, V>, Serializable {
    *     Note, however, that Java 8 users can call this method with any version and flavor of Guava.
    */
   @Override
-  public final V getOrDefault(@Nullable Object key, @Nullable V defaultValue) {
+  public final V getOrDefault( Object key,  V defaultValue) {
     V result = get(key);
     return (result != null) ? result : defaultValue;
   }
@@ -809,12 +809,12 @@ public abstract class ImmutableMap<K, V> implements Map<K, V>, Serializable {
     }
 
     @Override
-    public boolean containsKey(@Nullable Object key) {
+    public boolean containsKey( Object key) {
       return ImmutableMap.this.containsKey(key);
     }
 
     @Override
-    public ImmutableSet<V> get(@Nullable Object key) {
+    public ImmutableSet<V> get( Object key) {
       V outerValue = ImmutableMap.this.get(key);
       return (outerValue == null) ? null : ImmutableSet.of(outerValue);
     }
@@ -864,7 +864,7 @@ public abstract class ImmutableMap<K, V> implements Map<K, V>, Serializable {
   }
 
   @Override
-  public boolean equals(@Nullable Object object) {
+  public boolean equals( Object object) {
     return Maps.equalsImpl(this, object);
   }
 

@@ -7,7 +7,7 @@
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
 	
-	<groupId>com.jwebmp.jpms.thirdparty.commons</groupId>
+	<groupId>com.jwebmp.jpms.thirdparty</groupId>
     <artifactId>commons-parent</artifactId>
     <packaging>pom</packaging>
 

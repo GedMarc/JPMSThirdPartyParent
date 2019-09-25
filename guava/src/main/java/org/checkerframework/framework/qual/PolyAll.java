@@ -11,9 +11,9 @@ import java.lang.annotation.Target;
  * equivalent to writing a polymorphic qualifier for every type system.
  *
  * <p>The {@code @PolyAll} annotation applies to every type qualifier hierarchy for which no
- * explicit qualifier is written. For example, a declaration like {@code @PolyAll @NonNull String s}
+ * explicit qualifier is written. For example, a declaration like {@code @PolyAll  String s}
  * is polymorphic over every type system <em>except</em> the nullness type system, for which the
- * type is fixed at {@code @NonNull}.
+ * type is fixed at {@code }.
  * <!-- TODO: uncomment when this is implemented:
  * <p>
  * The optional argument creates conceptually distinct polymorphic

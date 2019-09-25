@@ -100,7 +100,7 @@ final class RegularContiguousSet<C extends Comparable> extends ContiguousSet<C> 
     };
   }
 
-  private static boolean equalsOrThrow(Comparable<?> left, @Nullable Comparable<?> right) {
+  private static boolean equalsOrThrow(Comparable<?> left,  Comparable<?> right) {
     return right != null && Range.compareOrThrow(left, right) == 0;
   }
 
@@ -146,7 +146,7 @@ final class RegularContiguousSet<C extends Comparable> extends ContiguousSet<C> 
   }
 
   @Override
-  public boolean contains(@Nullable Object object) {
+  public boolean contains( Object object) {
     if (object == null) {
       return false;
     }
@@ -195,7 +195,7 @@ final class RegularContiguousSet<C extends Comparable> extends ContiguousSet<C> 
   }
 
   @Override
-  public boolean equals(@Nullable Object object) {
+  public boolean equals( Object object) {
     if (object == this) {
       return true;
     } else if (object instanceof RegularContiguousSet) {

@@ -54,9 +54,9 @@ abstract class AbstractCatchingFuture<V, X extends Throwable, F, T>
    * In certain circumstances, this field might theoretically not be visible to an afterDone() call
    * triggered by cancel(). For details, see the comments on the fields of TimeoutFuture.
    */
-  @Nullable ListenableFuture<? extends V> inputFuture;
-  @Nullable Class<X> exceptionType;
-  @Nullable F fallback;
+   ListenableFuture<? extends V> inputFuture;
+   Class<X> exceptionType;
+   F fallback;
 
   AbstractCatchingFuture(
       ListenableFuture<? extends V> inputFuture, Class<X> exceptionType, F fallback) {
@@ -141,11 +141,11 @@ abstract class AbstractCatchingFuture<V, X extends Throwable, F, T>
 
   /** Template method for subtypes to actually run the fallback. */
   @ForOverride
-  abstract @Nullable T doFallback(F fallback, X throwable) throws Exception;
+  abstract  T doFallback(F fallback, X throwable) throws Exception;
 
   /** Template method for subtypes to actually set the result. */
   @ForOverride
-  abstract void setResult(@Nullable T result);
+  abstract void setResult( T result);
 
   @Override
   protected final void afterDone() {
@@ -201,13 +201,13 @@ abstract class AbstractCatchingFuture<V, X extends Throwable, F, T>
     }
 
     @Override
-    @Nullable
+
     V doFallback(Function<? super X, ? extends V> fallback, X cause) throws Exception {
       return fallback.apply(cause);
     }
 
     @Override
-    void setResult(@Nullable V result) {
+    void setResult( V result) {
       set(result);
     }
   }

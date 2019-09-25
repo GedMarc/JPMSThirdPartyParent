@@ -470,10 +470,10 @@ public abstract class Traverser<N> {
 
       /** A simple tuple of a node and a partially iterated {@link Iterator} of its successors. */
       private final class NodeAndSuccessors {
-        final @Nullable N node;
+        final  N node;
         final Iterator<? extends N> successorIterator;
 
-        NodeAndSuccessors(@Nullable N node, Iterable<? extends N> successors) {
+        NodeAndSuccessors( N node, Iterable<? extends N> successors) {
           this.node = node;
           this.successorIterator = successors.iterator();
         }
@@ -643,10 +643,10 @@ public abstract class Traverser<N> {
 
       /** A simple tuple of a node and a partially iterated {@link Iterator} of its children. */
       private final class NodeAndChildren {
-        final @Nullable N node;
+        final  N node;
         final Iterator<? extends N> childIterator;
 
-        NodeAndChildren(@Nullable N node, Iterable<? extends N> children) {
+        NodeAndChildren( N node, Iterable<? extends N> children) {
           this.node = node;
           this.childIterator = children.iterator();
         }

@@ -68,7 +68,7 @@ public final class Parameter implements AnnotatedElement {
   }
 
   @Override
-  public <A extends Annotation> @Nullable A getAnnotation(Class<A> annotationType) {
+  public <A extends Annotation>  A getAnnotation(Class<A> annotationType) {
     checkNotNull(annotationType);
     for (Annotation annotation : annotations) {
       if (annotationType.isInstance(annotation)) {
@@ -100,7 +100,7 @@ public final class Parameter implements AnnotatedElement {
   /** @since 18.0 */
   // @Override on JDK8
   @Override
-  public <A extends Annotation> @Nullable A getDeclaredAnnotation(Class<A> annotationType) {
+  public <A extends Annotation>  A getDeclaredAnnotation(Class<A> annotationType) {
     checkNotNull(annotationType);
     return FluentIterable.from(annotations).filter(annotationType).first().orNull();
   }
@@ -119,7 +119,7 @@ public final class Parameter implements AnnotatedElement {
   }
 
   @Override
-  public boolean equals(@Nullable Object obj) {
+  public boolean equals( Object obj) {
     if (obj instanceof Parameter) {
       Parameter that = (Parameter) obj;
       return position == that.position && declaration.equals(that.declaration);

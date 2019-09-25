@@ -47,14 +47,14 @@ interface ReferenceEntry<K, V> {
   void setValueReference(ValueReference<K, V> valueReference);
 
   /** Returns the next entry in the chain. */
-  @Nullable
+
   ReferenceEntry<K, V> getNext();
 
   /** Returns the entry's hash. */
   int getHash();
 
   /** Returns the key for this entry. */
-  @Nullable
+
   K getKey();
 
   /*

@@ -28,7 +28,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 @GwtCompatible
 public class ComputationException extends RuntimeException {
   /** Creates a new instance with the given cause. */
-  public ComputationException(@Nullable Throwable cause) {
+  public ComputationException( Throwable cause) {
     super(cause);
   }
 

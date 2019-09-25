@@ -73,7 +73,7 @@ public abstract class ArrayBasedUnicodeEscaper extends UnicodeEscaper {
       Map<Character, String> replacementMap,
       int safeMin,
       int safeMax,
-      @Nullable String unsafeReplacement) {
+       String unsafeReplacement) {
     this(ArrayBasedEscaperMap.create(replacementMap), safeMin, safeMax, unsafeReplacement);
   }
 
@@ -96,7 +96,7 @@ public abstract class ArrayBasedUnicodeEscaper extends UnicodeEscaper {
       ArrayBasedEscaperMap escaperMap,
       int safeMin,
       int safeMax,
-      @Nullable String unsafeReplacement) {
+       String unsafeReplacement) {
     checkNotNull(escaperMap); // GWT specific check (do not optimize)
     this.replacements = escaperMap.getReplacementArray();
     this.replacementsLength = replacements.length;

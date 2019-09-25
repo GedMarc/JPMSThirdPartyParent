@@ -92,7 +92,7 @@ public abstract class ForwardingSortedSet<E> extends ForwardingSet<E> implements
 
   // unsafe, but worst case is a CCE is thrown, which callers will be expecting
   @SuppressWarnings("unchecked")
-  private int unsafeCompare(@Nullable Object o1, @Nullable Object o2) {
+  private int unsafeCompare( Object o1,  Object o2) {
     Comparator<? super E> comparator = comparator();
     return (comparator == null)
         ? ((Comparable<Object>) o1).compareTo(o2)
@@ -108,7 +108,7 @@ public abstract class ForwardingSortedSet<E> extends ForwardingSet<E> implements
    */
   @Override
   @Beta
-  protected boolean standardContains(@Nullable Object object) {
+  protected boolean standardContains( Object object) {
     try {
       // any ClassCastExceptions are caught
       @SuppressWarnings("unchecked")
@@ -129,7 +129,7 @@ public abstract class ForwardingSortedSet<E> extends ForwardingSet<E> implements
    */
   @Override
   @Beta
-  protected boolean standardRemove(@Nullable Object object) {
+  protected boolean standardRemove( Object object) {
     try {
       // any ClassCastExceptions are caught
       @SuppressWarnings("unchecked")

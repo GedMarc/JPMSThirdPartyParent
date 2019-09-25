@@ -35,5 +35,5 @@ public interface AsyncFunction<I, O> {
    *
    * <p>Throwing an exception from this method is equivalent to returning a failing {@code Future}.
    */
-  ListenableFuture<O> apply(@Nullable I input) throws Exception;
+  ListenableFuture<O> apply( I input) throws Exception;
 }

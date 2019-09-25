@@ -85,13 +85,13 @@ public final class EnumHashBiMap<K extends Enum<K>, V> extends AbstractBiMap<K, 
 
   @CanIgnoreReturnValue
   @Override
-  public V put(K key, @Nullable V value) {
+  public V put(K key,  V value) {
     return super.put(key, value);
   }
 
   @CanIgnoreReturnValue
   @Override
-  public V forcePut(K key, @Nullable V value) {
+  public V forcePut(K key,  V value) {
     return super.forcePut(key, value);
   }
 

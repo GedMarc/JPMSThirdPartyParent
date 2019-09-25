@@ -207,7 +207,7 @@ public abstract class ImmutableCollection<E> extends AbstractCollection<E> imple
   }
 
   /** If this collection is backed by an array of its elements in insertion order, returns it. */
-  @Nullable
+
   Object[] internalArray() {
     return null;
   }
@@ -229,7 +229,7 @@ public abstract class ImmutableCollection<E> extends AbstractCollection<E> imple
   }
 
   @Override
-  public abstract boolean contains(@Nullable Object object);
+  public abstract boolean contains( Object object);
 
   /**
    * Guaranteed to throw an exception and leave the collection unmodified.

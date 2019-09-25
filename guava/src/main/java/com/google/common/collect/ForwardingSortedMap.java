@@ -126,7 +126,7 @@ public abstract class ForwardingSortedMap<K, V> extends ForwardingMap<K, V>
    */
   @Override
   @Beta
-  protected boolean standardContainsKey(@Nullable Object key) {
+  protected boolean standardContainsKey( Object key) {
     try {
       // any CCE will be caught
       @SuppressWarnings("unchecked")

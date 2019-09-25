@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.jwebmp.jpms.thirdparty.hibernate</groupId>
+        <groupId>com.jwebmp.jpms.thirdparty</groupId>
         <artifactId>hibernate-parent</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
@@ -10,87 +10,142 @@
     <artifactId>hibernate-core</artifactId>
     <packaging>jar</packaging>
 
-    <name>Hibernate Core</name>
+    <name>hibernate.core</name>
     <description>JPMS Module-Info's for a few of the Jakarta Libraries just until they add them in themselves</description>
 
     <dependencies>
         <dependency>
-            <groupId>com.jwebmp.jpms.thirdparty.hibernate</groupId>
-            <artifactId>jakarta.persistence-api</artifactId><type>jar</type>
-            </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
-            <artifactId>javax.transaction</artifactId><type>jar</type>
-            </dependency>
-
-        <dependency>
-            <groupId>com.jwebmp.jpms.thirdparty.hibernate</groupId>
-            <artifactId>hibernate-commons-annotations</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>javax.transaction</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
-            <artifactId>jboss-logmanager</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>hibernate-commons-annotations</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
-            <artifactId>jandex</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>jboss-logmanager</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
-            <artifactId>classmate</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>jandex</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
-            <artifactId>javassist</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>classmate</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
-            <artifactId>jakarta.xml.bind-api</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>javassist</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
 
-      <dependency>
-          <groupId>com.jwebmp.jpms.thirdparty</groupId>
-          <artifactId>dom4j</artifactId><type>jar</type>
-            </dependency>
+        <dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>dom4j</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
 
 
         <dependency>
             <groupId>net.bytebuddy</groupId>
-            <artifactId>byte-buddy</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>byte-buddy</artifactId>
+            <type>jar</type>
+        </dependency>
 
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>jakarta.enterprise.cdi-api</artifactId>
-            <optional>true</optional><type>jar</type>
-            </dependency>
+            <optional>true</optional>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
-            <artifactId>javax.inject</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>javax.inject</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
-            <artifactId>javax.security.jacc</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>javax.security.jacc</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>antlr</groupId>
-            <artifactId>antlr</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>antlr</artifactId>
+            <type>jar</type>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.ant</groupId>
-            <artifactId>ant</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>ant</artifactId>
+            <type>jar</type>
+        </dependency>
 
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>12</source>
+                    <target>12</target>
+                    <release>12</release>
+                    <annotationProcessorPaths>
+                        <annotationProcessorPath>
+                            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+                            <artifactId>jboss-logmanager</artifactId>
+                            <version>${project.version}</version>
+                        </annotationProcessorPath>
+                    </annotationProcessorPaths>
+                    <annotationProcessors>
+                        <annotationProcessor>org.jboss.logging.processor.apt.LoggingToolsProcessor</annotationProcessor>
+                    </annotationProcessors>
+                    <compilerArguments>
+                        <AaddGeneratedAnnotation>false</AaddGeneratedAnnotation>
+                        <Adebug>true</Adebug>
+                    </compilerArguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

@@ -254,7 +254,7 @@ public final class CacheStats {
   }
 
   @Override
-  public boolean equals(@Nullable Object object) {
+  public boolean equals( Object object) {
     if (object instanceof CacheStats) {
       CacheStats other = (CacheStats) object;
       return hitCount == other.hitCount

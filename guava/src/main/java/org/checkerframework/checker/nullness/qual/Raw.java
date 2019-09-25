@@ -64,7 +64,7 @@ import org.checkerframework.framework.qual.TypeUseLocation;
  *   {@literal @}NonNull String b;
  *   {@literal @}Override
  *    void foo() {
- *        // Dereferencing 'b' is ok, since 'this' is @NonRaw and 'b' @NonNull.
+ *        // Dereferencing 'b' is ok, since 'this' is @NonRaw and 'b' .
  *        // However, when executing 'new B()', this line throws a null-pointer exception.
  *        b.toString();
  *    }

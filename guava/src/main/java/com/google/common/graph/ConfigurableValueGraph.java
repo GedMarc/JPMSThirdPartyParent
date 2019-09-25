@@ -127,12 +127,12 @@ class ConfigurableValueGraph<N, V> extends AbstractValueGraph<N, V> {
   }
 
   @Override
-  public @Nullable V edgeValueOrDefault(N nodeU, N nodeV, @Nullable V defaultValue) {
+  public  V edgeValueOrDefault(N nodeU, N nodeV,  V defaultValue) {
     return edgeValueOrDefault_internal(checkNotNull(nodeU), checkNotNull(nodeV), defaultValue);
   }
 
   @Override
-  public @Nullable V edgeValueOrDefault(EndpointPair<N> endpoints, @Nullable V defaultValue) {
+  public  V edgeValueOrDefault(EndpointPair<N> endpoints,  V defaultValue) {
     validateEndpoints(endpoints);
     return edgeValueOrDefault_internal(endpoints.nodeU(), endpoints.nodeV(), defaultValue);
   }
@@ -151,7 +151,7 @@ class ConfigurableValueGraph<N, V> extends AbstractValueGraph<N, V> {
     return connections;
   }
 
-  protected final boolean containsNode(@Nullable N node) {
+  protected final boolean containsNode( N node) {
     return nodeConnections.containsKey(node);
   }
 

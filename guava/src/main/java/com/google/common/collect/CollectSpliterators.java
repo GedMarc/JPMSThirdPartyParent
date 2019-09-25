@@ -65,7 +65,7 @@ final class CollectSpliterators {
       }
 
       @Override
-      public @Nullable Spliterator<T> trySplit() {
+      public  Spliterator<T> trySplit() {
         Spliterator.OfInt split = delegate.trySplit();
         return (split == null) ? null : new WithCharacteristics(split);
       }
@@ -208,7 +208,7 @@ final class CollectSpliterators {
     checkNotNull(fromSpliterator);
     checkNotNull(function);
     class FlatMapSpliterator implements Spliterator<T> {
-      @Nullable Spliterator<T> prefix;
+       Spliterator<T> prefix;
       final Spliterator<F> from;
       int characteristics;
       long estimatedSize;

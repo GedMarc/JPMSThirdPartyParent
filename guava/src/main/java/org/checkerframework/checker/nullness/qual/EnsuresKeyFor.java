@@ -18,7 +18,7 @@ import org.checkerframework.framework.qual.QualifierArgument;
  *
  * <pre>
  * &#64;EnsuresKeyFor(value="key", map="this")
- * public @Nullable V put(K key, V value) { ... }
+ * public  V put(K key, V value) { ... }
  * </pre>
  *
  * <p>This method guarantees that {@code key} has type {@code @KeyFor("this")} after the method

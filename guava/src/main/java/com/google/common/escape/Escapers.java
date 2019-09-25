@@ -125,7 +125,7 @@ public final class Escapers {
      * @return the builder instance
      */
     @CanIgnoreReturnValue
-    public Builder setUnsafeReplacement(@Nullable String unsafeReplacement) {
+    public Builder setUnsafeReplacement( String unsafeReplacement) {
       this.unsafeReplacement = unsafeReplacement;
       return this;
     }

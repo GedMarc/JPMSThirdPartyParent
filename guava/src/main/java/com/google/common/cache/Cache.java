@@ -45,7 +45,7 @@ public interface Cache<K, V> {
    *
    * @since 11.0
    */
-  @Nullable
+
   V getIfPresent(@CompatibleWith("K") Object key);
 
   /**

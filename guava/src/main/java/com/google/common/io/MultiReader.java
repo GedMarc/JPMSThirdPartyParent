@@ -30,7 +30,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 @GwtIncompatible
 class MultiReader extends Reader {
   private final Iterator<? extends CharSource> it;
-  private @Nullable Reader current;
+  private  Reader current;
 
   MultiReader(Iterator<? extends CharSource> readers) throws IOException {
     this.it = readers;
@@ -46,7 +46,7 @@ class MultiReader extends Reader {
   }
 
   @Override
-  public int read(char @Nullable [] cbuf, int off, int len) throws IOException {
+  public int read(char  [] cbuf, int off, int len) throws IOException {
     if (current == null) {
       return -1;
     }

@@ -17,7 +17,7 @@ import java.lang.annotation.Target;
  * <pre><code>
  *    {@literal @}AssertNonNullIfNonNull("id")
  *    {@literal @}Pure
- *     public @Nullable Long getId() {
+ *     public  Long getId() {
  *         return id;
  *     }
  * </code></pre>

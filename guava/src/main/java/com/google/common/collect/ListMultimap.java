@@ -49,7 +49,7 @@ public interface ListMultimap<K, V> extends Multimap<K, V> {
    * the {@link Multimap} interface.
    */
   @Override
-  List<V> get(@Nullable K key);
+  List<V> get( K key);
 
   /**
    * {@inheritDoc}
@@ -60,7 +60,7 @@ public interface ListMultimap<K, V> extends Multimap<K, V> {
    */
   @CanIgnoreReturnValue
   @Override
-  List<V> removeAll(@Nullable Object key);
+  List<V> removeAll( Object key);
 
   /**
    * {@inheritDoc}
@@ -93,5 +93,5 @@ public interface ListMultimap<K, V> extends Multimap<K, V> {
    * empty {@code SetMultimap}.
    */
   @Override
-  boolean equals(@Nullable Object obj);
+  boolean equals( Object obj);
 }

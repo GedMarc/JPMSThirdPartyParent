@@ -44,7 +44,7 @@ public final class Atomics {
    * @param initialValue the initial value
    * @return a new {@code AtomicReference} with the given initial value
    */
-  public static <V> AtomicReference<V> newReference(@Nullable V initialValue) {
+  public static <V> AtomicReference<V> newReference( V initialValue) {
     return new AtomicReference<V>(initialValue);
   }
 

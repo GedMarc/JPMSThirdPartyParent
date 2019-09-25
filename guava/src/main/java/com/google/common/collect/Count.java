@@ -59,7 +59,7 @@ final class Count implements Serializable {
   }
 
   @Override
-  public boolean equals(@Nullable Object obj) {
+  public boolean equals( Object obj) {
     return obj instanceof Count && ((Count) obj).value == value;
   }
 

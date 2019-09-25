@@ -19,15 +19,21 @@
     <dependencies>
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
-            <artifactId>cache-api</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>cache-api</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
-            <artifactId>cache-annotations-ri-common</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>cache-annotations-ri-common</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
-            <groupId>com.jwebmp.inject</groupId>
-            <artifactId>guice</artifactId><type>jar</type>
-            </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>guice</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 </project>

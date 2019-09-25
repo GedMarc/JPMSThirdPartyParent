@@ -193,7 +193,7 @@ public final class RegexUtil {
      */
     @SuppressWarnings("regex") // RegexUtil
     @SideEffectFree
-    public static @Nullable String regexError(String s) {
+    public static  String regexError(String s) {
         return regexError(s, 0);
     }
 
@@ -208,7 +208,7 @@ public final class RegexUtil {
      */
     @SuppressWarnings({"regex", "not.sef"}) // RegexUtil;
     @SideEffectFree
-    public static @Nullable String regexError(String s, int groups) {
+    public static  String regexError(String s, int groups) {
         try {
             Pattern p = Pattern.compile(s);
             int actualGroups = getGroupCount(p);
@@ -230,7 +230,7 @@ public final class RegexUtil {
      */
     @SuppressWarnings("regex") // RegexUtil
     @SideEffectFree
-    public static @Nullable PatternSyntaxException regexException(String s) {
+    public static  PatternSyntaxException regexException(String s) {
         return regexException(s, 0);
     }
 
@@ -245,7 +245,7 @@ public final class RegexUtil {
      */
     @SuppressWarnings("regex") // RegexUtil
     @SideEffectFree
-    public static @Nullable PatternSyntaxException regexException(String s, int groups) {
+    public static  PatternSyntaxException regexException(String s, int groups) {
         try {
             Pattern p = Pattern.compile(s);
             int actualGroups = getGroupCount(p);

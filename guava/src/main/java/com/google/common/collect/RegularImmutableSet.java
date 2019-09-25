@@ -48,7 +48,7 @@ final class RegularImmutableSet<E> extends ImmutableSet<E> {
   }
 
   @Override
-  public boolean contains(@Nullable Object target) {
+  public boolean contains( Object target) {
     Object[] table = this.table;
     if (target == null || table == null) {
       return false;

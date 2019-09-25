@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
    <parent>
-        <groupId>com.jwebmp.jpms.thirdparty.hibernate</groupId>
+        <groupId>com.jwebmp.jpms.thirdparty</groupId>
         <artifactId>hibernate-parent</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
@@ -15,7 +15,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.jwebmp.jpms.thirdparty.hibernate</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>hibernate-core</artifactId>
             <type>jar</type>
             </dependency>
@@ -27,5 +27,35 @@
             </dependency>
 
     </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>12</source>
+                    <target>12</target>
+                    <release>12</release>
+                    <annotationProcessorPaths>
+                        <annotationProcessorPath>
+                            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+                            <artifactId>jboss-logmanager</artifactId>
+                            <version>${project.version}</version>
+                        </annotationProcessorPath>
+                    </annotationProcessorPaths>
+                    <annotationProcessors>
+                        <annotationProcessor>org.jboss.logging.processor.apt.LoggingToolsProcessor</annotationProcessor>
+                    </annotationProcessors>
+                    <compilerArguments>
+                        <AaddGeneratedAnnotation>false</AaddGeneratedAnnotation>
+                        <Adebug>true</Adebug>
+                    </compilerArguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 
 </project>

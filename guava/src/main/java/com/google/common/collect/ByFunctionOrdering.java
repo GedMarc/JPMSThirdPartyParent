@@ -44,7 +44,7 @@ final class ByFunctionOrdering<F, T> extends Ordering<F> implements Serializable
   }
 
   @Override
-  public boolean equals(@Nullable Object object) {
+  public boolean equals( Object object) {
     if (object == this) {
       return true;
     }

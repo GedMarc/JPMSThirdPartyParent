@@ -41,7 +41,7 @@ final class JdkBackedImmutableSet<E> extends IndexedImmutableSet<E> {
   }
 
   @Override
-  public boolean contains(@Nullable Object object) {
+  public boolean contains( Object object) {
     return delegate.contains(object);
   }
 

@@ -40,7 +40,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 @J2ObjCIncompatible // java.nio.file
 public final class InsecureRecursiveDeleteException extends FileSystemException {
 
-  public InsecureRecursiveDeleteException(@Nullable String file) {
+  public InsecureRecursiveDeleteException( String file) {
     super(file, null, "unable to guarantee security of recursive delete");
   }
 }

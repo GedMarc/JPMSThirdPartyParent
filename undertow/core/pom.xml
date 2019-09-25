@@ -23,14 +23,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
+        <groupId>com.jwebmp.jpms.thirdparty</groupId>
         <artifactId>undertow-parent</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
 
     <artifactId>undertow-core</artifactId>
 
-    <name>Undertow Core</name>
+    <name>io.undertow</name>
 
     <properties>
         <test.level>INFO</test.level>
@@ -51,31 +51,35 @@
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>jboss-logmanager</artifactId>
-            <version>${project.version}</version><type>jar</type>
-            </dependency>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>xnio-api</artifactId>
-            <version>${project.version}</version><type>jar</type>
-            </dependency>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>xnio-nio</artifactId>
-            <version>${project.version}</version><type>jar</type>
-            </dependency>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.eclipse.jetty.alpn</groupId>
             <artifactId>alpn-api</artifactId>
             <scope>provided</scope>
-            <version>1.1.3.v20160715</version><type>jar</type>
-            </dependency>
+            <type>jar</type>
+        </dependency>
         <dependency>
-            <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>undertow-parser-generator</artifactId>
-            <version>${project.version}</version><type>jar</type>
-            </dependency>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
 
     </dependencies>
 
@@ -110,7 +114,7 @@
                     <target>12</target>
                     <annotationProcessorPaths>
                         <annotationProcessorPath>
-                            <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
+                            <groupId>com.jwebmp.jpms.thirdparty</groupId>
                             <artifactId>undertow-parser-generator</artifactId>
                             <version>${project.version}</version>
                         </annotationProcessorPath>

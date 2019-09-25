@@ -61,7 +61,7 @@ final class Absent<T> extends Optional<T> {
   }
 
   @Override
-  public @Nullable T orNull() {
+  public  T orNull() {
     return null;
   }
 
@@ -77,7 +77,7 @@ final class Absent<T> extends Optional<T> {
   }
 
   @Override
-  public boolean equals(@Nullable Object object) {
+  public boolean equals( Object object) {
     return object == this;
   }
 

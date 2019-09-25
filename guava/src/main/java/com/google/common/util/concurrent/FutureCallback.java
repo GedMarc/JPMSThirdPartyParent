@@ -31,7 +31,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 @GwtCompatible
 public interface FutureCallback<V> {
   /** Invoked with the result of the {@code Future} computation when it is successful. */
-  void onSuccess(@Nullable V result);
+  void onSuccess( V result);
 
   /**
    * Invoked when a {@code Future} computation fails or is canceled.

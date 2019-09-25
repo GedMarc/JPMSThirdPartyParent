@@ -134,7 +134,7 @@ abstract class Striped64 extends Number {
   static final int NCPU = Runtime.getRuntime().availableProcessors();
 
   /** Table of cells. When non-null, size is a power of 2. */
-  transient volatile Cell @Nullable [] cells;
+  transient volatile Cell  [] cells;
 
   /**
    * Base value, used mainly when there is no contention, but also as a fallback during table
@@ -177,7 +177,7 @@ abstract class Striped64 extends Number {
    * @param hc the hash code holder
    * @param wasUncontended false if CAS failed before call
    */
-  final void retryUpdate(long x, int @Nullable [] hc, boolean wasUncontended) {
+  final void retryUpdate(long x, int  [] hc, boolean wasUncontended) {
     int h;
     if (hc == null) {
       threadHashCode.set(hc = new int[1]); // Initialize randomly

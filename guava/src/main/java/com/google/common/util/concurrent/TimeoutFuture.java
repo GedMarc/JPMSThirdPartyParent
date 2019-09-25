@@ -71,8 +71,8 @@ final class TimeoutFuture<V> extends FluentFuture.TrustedFuture<V> {
    * write-barriers).
    */
 
-  private @Nullable ListenableFuture<V> delegateRef;
-  private @Nullable ScheduledFuture<?> timer;
+  private  ListenableFuture<V> delegateRef;
+  private  ScheduledFuture<?> timer;
 
   private TimeoutFuture(ListenableFuture<V> delegate) {
     this.delegateRef = Preconditions.checkNotNull(delegate);
@@ -80,7 +80,7 @@ final class TimeoutFuture<V> extends FluentFuture.TrustedFuture<V> {
 
   /** A runnable that is called when the delegate or the timer completes. */
   private static final class Fire<V> implements Runnable {
-    @Nullable TimeoutFuture<V> timeoutFutureRef;
+     TimeoutFuture<V> timeoutFutureRef;
 
     Fire(TimeoutFuture<V> timeoutFuture) {
       this.timeoutFutureRef = timeoutFuture;

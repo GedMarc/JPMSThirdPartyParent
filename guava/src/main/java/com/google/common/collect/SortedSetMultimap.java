@@ -58,7 +58,7 @@ public interface SortedSetMultimap<K, V> extends SetMultimap<K, V> {
    * {@link Multimap} interface.
    */
   @Override
-  SortedSet<V> get(@Nullable K key);
+  SortedSet<V> get( K key);
 
   /**
    * Removes all values associated with a given key.
@@ -69,7 +69,7 @@ public interface SortedSetMultimap<K, V> extends SetMultimap<K, V> {
    */
   @CanIgnoreReturnValue
   @Override
-  SortedSet<V> removeAll(@Nullable Object key);
+  SortedSet<V> removeAll( Object key);
 
   /**
    * Stores a collection of values with the same key, replacing any existing values for that key.

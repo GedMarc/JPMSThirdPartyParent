@@ -1,33 +1,24 @@
-# Typically *NIX text editors, by default, append '~' to files on saving to make backups
-*~
-
-# Build output directies
-target
-build
-bin
-test-output
-
-# IntelliJ specific files/directories
-/out
-.idea
-*.ipr
-*.iws
+/build/
+/dist/
+Thumbs.db
+nbproject/build-native.xml~
+javadoc.zip
+persistence.xml
+/javadoc/
+/.jacocoverage/
+/build
+/target/
+/out/
+/**/.sonar/
+**.jacocoverage/
+**/*.iml
 *.iml
-atlassian-ide-plugin.xml
-
-# Eclipse specific files/directories
-.classpath
-.project
-.settings
-.externalToolBuilders
-.factorypath
-
-# NetBeans specific files/directories
-.nbattrs
-
-# Miscellaneous
+*.versionsBackup
 *.log
-.clover
-
-# Release
-/beanvalidation-release-scripts
+*.tlog
+/.idea/
+*.project
+**/*.project
+**/*.classpath
+**/.settings
+/.settings

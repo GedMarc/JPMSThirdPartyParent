@@ -18,7 +18,7 @@ import org.checkerframework.framework.qual.InheritedAnnotation;
  * follows:
  *
  * <pre>{@code   @EnsuresNonNullIf(expression="#1", result=true)
- *   public boolean equals(@Nullable Object obj) { ... }}</pre>
+ *   public boolean equals( Object obj) { ... }}</pre>
  *
  * because, if {@code equals} returns true, then the first (#1) argument to {@code equals} was not
  * null.

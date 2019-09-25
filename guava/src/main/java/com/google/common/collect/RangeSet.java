@@ -260,7 +260,7 @@ public interface RangeSet<C extends Comparable> {
    * according to {@link Range#equals(Object)}.
    */
   @Override
-  boolean equals(@Nullable Object obj);
+  boolean equals( Object obj);
 
   /** Returns {@code asRanges().hashCode()}. */
   @Override

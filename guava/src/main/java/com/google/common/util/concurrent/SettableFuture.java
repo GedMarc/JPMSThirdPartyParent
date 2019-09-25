@@ -43,7 +43,7 @@ public final class SettableFuture<V> extends AbstractFuture.TrustedFuture<V> {
 
   @CanIgnoreReturnValue
   @Override
-  public boolean set(@Nullable V value) {
+  public boolean set( V value) {
     return super.set(value);
   }
 

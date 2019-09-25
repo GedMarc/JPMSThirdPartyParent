@@ -30,7 +30,8 @@
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>jakarta.activation</artifactId>
             <type>jar</type>
-            </dependency>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 

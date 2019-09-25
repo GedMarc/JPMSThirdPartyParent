@@ -16,11 +16,11 @@ import org.checkerframework.framework.qual.PreconditionAnnotation;
  *
  * <pre>
  * class MyClass {
- * &nbsp; @Nullable Object field1;
- * &nbsp; @Nullable Object field2;
+ * &nbsp;  Object field1;
+ * &nbsp;  Object field2;
  *
  * &nbsp; @RequiresNonNull({"field1", "other.field1"})
- *   void method1(@NonNull MyClass other) {
+ *   void method1( MyClass other) {
  *     field1.toString();           // OK, this.field1 is known to be non-null
  *     field2.toString();           // error, might throw NullPointerException
  *     other.field1.toString();     // OK, other.field1 is known to be non-null
@@ -44,7 +44,7 @@ import org.checkerframework.framework.qual.PreconditionAnnotation;
  *   }
  * </pre>
  *
- * Do not use this annotation for formal parameters (instead, give them a {@code @NonNull} type,
+ * Do not use this annotation for formal parameters (instead, give them a {@code } type,
  * which is the default and need not be written). The {@code @RequiresNonNull} annotation is
  * intended for other expressions, such as field accesses or method calls.
  *

@@ -643,7 +643,7 @@ public final class Hashing {
     }
 
     @Override
-    public boolean equals(@Nullable Object object) {
+    public boolean equals( Object object) {
       if (object instanceof ConcatenatedHashFunction) {
         ConcatenatedHashFunction other = (ConcatenatedHashFunction) object;
         return Arrays.equals(functions, other.functions);

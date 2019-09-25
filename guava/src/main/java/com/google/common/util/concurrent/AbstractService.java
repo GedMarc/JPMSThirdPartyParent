@@ -575,14 +575,14 @@ public abstract class AbstractService implements Service {
      * The exception that caused this service to fail. This will be {@code null} unless the service
      * has failed.
      */
-    final @Nullable Throwable failure;
+    final  Throwable failure;
 
     StateSnapshot(State internalState) {
       this(internalState, false, null);
     }
 
     StateSnapshot(
-        State internalState, boolean shutdownWhenStartupFinishes, @Nullable Throwable failure) {
+        State internalState, boolean shutdownWhenStartupFinishes,  Throwable failure) {
       checkArgument(
           !shutdownWhenStartupFinishes || internalState == STARTING,
           "shutdownWhenStartupFinishes can only be set if state is STARTING. Got %s instead.",

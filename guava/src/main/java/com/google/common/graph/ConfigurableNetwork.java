@@ -192,11 +192,11 @@ class ConfigurableNetwork<N, E> extends AbstractNetwork<N, E> {
     return referenceNode;
   }
 
-  protected final boolean containsNode(@Nullable N node) {
+  protected final boolean containsNode( N node) {
     return nodeConnections.containsKey(node);
   }
 
-  protected final boolean containsEdge(@Nullable E edge) {
+  protected final boolean containsEdge( E edge) {
     return edgeToReferenceNode.containsKey(edge);
   }
 }

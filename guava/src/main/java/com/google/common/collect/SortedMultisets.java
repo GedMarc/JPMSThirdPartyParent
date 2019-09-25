@@ -165,7 +165,7 @@ final class SortedMultisets {
     return entry.getElement();
   }
 
-  private static <E> E getElementOrNull(@Nullable Entry<E> entry) {
+  private static <E> E getElementOrNull( Entry<E> entry) {
     return (entry == null) ? null : entry.getElement();
   }
 }

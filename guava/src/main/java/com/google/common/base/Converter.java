@@ -165,12 +165,12 @@ public abstract class Converter<A, B> implements Function<A, B> {
    * @return the converted value; is null <i>if and only if</i> {@code a} is null
    */
   @CanIgnoreReturnValue
-  public final @Nullable B convert(@Nullable A a) {
+  public final  B convert( A a) {
     return correctedDoForward(a);
   }
 
-  @Nullable
-  B correctedDoForward(@Nullable A a) {
+
+  B correctedDoForward( A a) {
     if (handleNullAutomatically) {
       // TODO(kevinb): we shouldn't be checking for a null result at runtime. Assert?
       return a == null ? null : checkNotNull(doForward(a));
@@ -179,8 +179,8 @@ public abstract class Converter<A, B> implements Function<A, B> {
     }
   }
 
-  @Nullable
-  A correctedDoBackward(@Nullable B b) {
+
+  A correctedDoBackward( B b) {
     if (handleNullAutomatically) {
       // TODO(kevinb): we shouldn't be checking for a null result at runtime. Assert?
       return b == null ? null : checkNotNull(doBackward(b));
@@ -265,14 +265,14 @@ public abstract class Converter<A, B> implements Function<A, B> {
     }
 
     @Override
-    @Nullable
-    A correctedDoForward(@Nullable B b) {
+
+    A correctedDoForward( B b) {
       return original.correctedDoBackward(b);
     }
 
     @Override
-    @Nullable
-    B correctedDoBackward(@Nullable A a) {
+
+    B correctedDoBackward( A a) {
       return original.correctedDoForward(a);
     }
 
@@ -282,7 +282,7 @@ public abstract class Converter<A, B> implements Function<A, B> {
     }
 
     @Override
-    public boolean equals(@Nullable Object object) {
+    public boolean equals( Object object) {
       if (object instanceof ReverseConverter) {
         ReverseConverter<?, ?> that = (ReverseConverter<?, ?>) object;
         return this.original.equals(that.original);
@@ -347,19 +347,19 @@ public abstract class Converter<A, B> implements Function<A, B> {
     }
 
     @Override
-    @Nullable
-    C correctedDoForward(@Nullable A a) {
+
+    C correctedDoForward( A a) {
       return second.correctedDoForward(first.correctedDoForward(a));
     }
 
     @Override
-    @Nullable
-    A correctedDoBackward(@Nullable C c) {
+
+    A correctedDoBackward( C c) {
       return first.correctedDoBackward(second.correctedDoBackward(c));
     }
 
     @Override
-    public boolean equals(@Nullable Object object) {
+    public boolean equals( Object object) {
       if (object instanceof ConverterComposition) {
         ConverterComposition<?, ?, ?> that = (ConverterComposition<?, ?, ?>) object;
         return this.first.equals(that.first) && this.second.equals(that.second);
@@ -386,7 +386,7 @@ public abstract class Converter<A, B> implements Function<A, B> {
   @Deprecated
   @Override
   @CanIgnoreReturnValue
-  public final @Nullable B apply(@Nullable A a) {
+  public final  B apply( A a) {
     return convert(a);
   }
 
@@ -402,7 +402,7 @@ public abstract class Converter<A, B> implements Function<A, B> {
    * interchangeable.
    */
   @Override
-  public boolean equals(@Nullable Object object) {
+  public boolean equals( Object object) {
     return super.equals(object);
   }
 
@@ -451,7 +451,7 @@ public abstract class Converter<A, B> implements Function<A, B> {
     }
 
     @Override
-    public boolean equals(@Nullable Object object) {
+    public boolean equals( Object object) {
       if (object instanceof FunctionBasedConverter) {
         FunctionBasedConverter<?, ?> that = (FunctionBasedConverter<?, ?>) object;
         return this.forwardFunction.equals(that.forwardFunction)

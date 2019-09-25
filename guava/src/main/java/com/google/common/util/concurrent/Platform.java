@@ -21,7 +21,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 @GwtCompatible(emulated = true)
 final class Platform {
   static boolean isInstanceOfThrowableClass(
-      @Nullable Throwable t, Class<? extends Throwable> expectedClass) {
+       Throwable t, Class<? extends Throwable> expectedClass) {
     return expectedClass.isInstance(t);
   }
 

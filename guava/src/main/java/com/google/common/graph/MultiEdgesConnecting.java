@@ -63,7 +63,7 @@ abstract class MultiEdgesConnecting<E> extends AbstractSet<E> {
   }
 
   @Override
-  public boolean contains(@Nullable Object edge) {
+  public boolean contains( Object edge) {
     return targetNode.equals(outEdgeToNode.get(edge));
   }
 }

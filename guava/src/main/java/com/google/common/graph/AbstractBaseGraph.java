@@ -85,7 +85,7 @@ abstract class AbstractBaseGraph<N> implements BaseGraph<N> {
       // Graph<LinkedList>.
       @SuppressWarnings("unchecked")
       @Override
-      public boolean contains(@Nullable Object obj) {
+      public boolean contains( Object obj) {
         if (!(obj instanceof EndpointPair)) {
           return false;
         }
@@ -211,7 +211,7 @@ abstract class AbstractBaseGraph<N> implements BaseGraph<N> {
       }
 
       @Override
-      public boolean contains(@Nullable Object obj) {
+      public boolean contains( Object obj) {
         if (!(obj instanceof EndpointPair)) {
           return false;
         }
@@ -252,7 +252,7 @@ abstract class AbstractBaseGraph<N> implements BaseGraph<N> {
       }
 
       @Override
-      public boolean contains(@Nullable Object obj) {
+      public boolean contains( Object obj) {
         if (!(obj instanceof EndpointPair)) {
           return false;
         }

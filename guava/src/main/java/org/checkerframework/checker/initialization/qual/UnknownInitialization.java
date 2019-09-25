@@ -24,7 +24,7 @@ import org.checkerframework.framework.qual.TypeUseLocation;
  * does not correspond to the declared type qualifier for that field. For instance, consider a
  * non-null field:
  *
- * <pre>@NonNull Object f;</pre>
+ * <pre> Object f;</pre>
  *
  * In a partially-initialized object, field {@code f} might be {@code null} despite its
  * {@literal @}{@link org.checkerframework.checker.nullness.qual.NonNull} type annotation.

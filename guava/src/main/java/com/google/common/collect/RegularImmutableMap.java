@@ -98,7 +98,7 @@ final class RegularImmutableMap<K, V> extends ImmutableMap<K, V> {
       V value = entry.getValue();
       checkEntryNotNull(key, value);
       int tableIndex = Hashing.smear(key.hashCode()) & mask;
-      @Nullable ImmutableMapEntry<K, V> existing = table[tableIndex];
+       ImmutableMapEntry<K, V> existing = table[tableIndex];
       // prepend, not append, so the entries can be immutable
       ImmutableMapEntry<K, V> newEntry =
           (existing == null)
@@ -140,7 +140,7 @@ final class RegularImmutableMap<K, V> extends ImmutableMap<K, V> {
    */
   @CanIgnoreReturnValue
   static int checkNoConflictInKeyBucket(
-      Object key, Entry<?, ?> entry, @Nullable ImmutableMapEntry<?, ?> keyBucketHead) {
+      Object key, Entry<?, ?> entry,  ImmutableMapEntry<?, ?> keyBucketHead) {
     int bucketSize = 0;
     for (; keyBucketHead != null; keyBucketHead = keyBucketHead.getNextInKeyBucket()) {
       checkNoConflict(!key.equals(keyBucketHead.getKey()), "key", entry, keyBucketHead);
@@ -150,12 +150,12 @@ final class RegularImmutableMap<K, V> extends ImmutableMap<K, V> {
   }
 
   @Override
-  public V get(@Nullable Object key) {
+  public V get( Object key) {
     return get(key, table, mask);
   }
 
-  static <V> @Nullable V get(
-      @Nullable Object key, ImmutableMapEntry<?, V> @Nullable [] keyTable, int mask) {
+  static <V>  V get(
+       Object key, ImmutableMapEntry<?, V>  [] keyTable, int mask) {
     if (key == null || keyTable == null) {
       return null;
     }

@@ -1725,7 +1725,7 @@ public final class Multimaps {
     }
 
     @Override
-    public boolean contains(@Nullable Object element) {
+    public boolean contains( Object element) {
       return multimap.containsKey(element);
     }
 
@@ -1735,13 +1735,13 @@ public final class Multimaps {
     }
 
     @Override
-    public int count(@Nullable Object element) {
+    public int count( Object element) {
       Collection<V> values = Maps.safeGet(multimap.asMap(), element);
       return (values == null) ? 0 : values.size();
     }
 
     @Override
-    public int remove(@Nullable Object element, int occurrences) {
+    public int remove( Object element, int occurrences) {
       checkNonnegative(occurrences, "occurrences");
       if (occurrences == 0) {
         return count(element);
@@ -1792,7 +1792,7 @@ public final class Multimaps {
     }
 
     @Override
-    public boolean contains(@Nullable Object o) {
+    public boolean contains( Object o) {
       if (o instanceof Map.Entry) {
         Map.Entry<?, ?> entry = (Map.Entry<?, ?>) o;
         return multimap().containsEntry(entry.getKey(), entry.getValue());
@@ -1801,7 +1801,7 @@ public final class Multimaps {
     }
 
     @Override
-    public boolean remove(@Nullable Object o) {
+    public boolean remove( Object o) {
       if (o instanceof Map.Entry) {
         Map.Entry<?, ?> entry = (Map.Entry<?, ?>) o;
         return multimap().remove(entry.getKey(), entry.getValue());
@@ -2182,7 +2182,7 @@ public final class Multimaps {
     return new FilteredEntrySetMultimap<>(multimap.unfiltered(), predicate);
   }
 
-  static boolean equalsImpl(Multimap<?, ?> multimap, @Nullable Object object) {
+  static boolean equalsImpl(Multimap<?, ?> multimap,  Object object) {
     if (object == multimap) {
       return true;
     }

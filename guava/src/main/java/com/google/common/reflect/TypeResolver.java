@@ -527,7 +527,7 @@ public final class TypeResolver {
       return new WildcardCapturer(id);
     }
 
-    private Type captureNullable(@Nullable Type type) {
+    private Type captureNullable( Type type) {
       if (type == null) {
         return null;
       }

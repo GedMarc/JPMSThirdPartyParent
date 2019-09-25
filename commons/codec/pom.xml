@@ -23,7 +23,7 @@ limitations under the License.
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.jwebmp.jpms.thirdparty.commons</groupId>
+    <groupId>com.jwebmp.jpms.thirdparty</groupId>
     <artifactId>commons-parent</artifactId>
     <version>0.0.0_0-SNAPSHOT</version>
   </parent>
@@ -31,6 +31,7 @@ limitations under the License.
   <artifactId>commons-codec</artifactId>
 
   <name>Apache Commons Codec</name>
+
   <inceptionYear>2002</inceptionYear>
   <description>
      The Apache Commons Codec package contains simple encoder and decoders for
@@ -48,13 +49,7 @@ limitations under the License.
     <developerConnection>scm:git:https://gitbox.apache.org/repos/asf?p=commons-codec.git</developerConnection>
     <url>https://github.com/apache/commons-codec</url>
   </scm>
-  <distributionManagement>
-    <site>
-      <id>stagingSite</id>
-      <name>Apache Staging Website</name>
-      <url>${commons.deployment.protocol}://people.apache.org/www/commons.apache.org/commons-${commons.componentid}/</url>
-    </site>
-  </distributionManagement>
+
   <developers>
     <developer>
       <name>Henri Yandell</name>

@@ -23,14 +23,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
+        <groupId>com.jwebmp.jpms.thirdparty</groupId>
         <artifactId>undertow-parent</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
 
     <artifactId>undertow-parser-generator</artifactId>
 
-    <name>Undertow Parser Generator</name>
+    <name>io.undertow.parser.generator</name>
     <description>An annotation processor that is used to generate the HTTP parser</description>
 
     <build>

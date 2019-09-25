@@ -68,7 +68,7 @@ final class ImmutableMapValues<K, V> extends ImmutableCollection<V> {
   }
 
   @Override
-  public boolean contains(@Nullable Object object) {
+  public boolean contains( Object object) {
     return object != null && Iterators.contains(iterator(), object);
   }
 

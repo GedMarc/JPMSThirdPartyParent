@@ -39,12 +39,12 @@ abstract class AbstractIterator<T> implements Iterator<T> {
     FAILED,
   }
 
-  private @Nullable T next;
+  private  T next;
 
   protected abstract T computeNext();
 
   @CanIgnoreReturnValue
-  protected final @Nullable T endOfData() {
+  protected final  T endOfData() {
     state = State.DONE;
     return null;
   }

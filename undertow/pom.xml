@@ -27,7 +27,7 @@
     </parent>
 	
 	
-    <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
+    <groupId>com.jwebmp.jpms.thirdparty</groupId>
     <artifactId>undertow-parent</artifactId>
 	
     <name>Undertow</name>

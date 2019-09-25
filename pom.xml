@@ -49,7 +49,7 @@
 				<module>jaxen</module>
 				<module>undertow</module>
 				<module>commons</module>
-				<module>hazelcast</module>
+				<!--<module>hazelcast</module>-->
 				<module>guava</module>
 	<!--			<module>msvcore</module>
 				<module>isorelax</module>

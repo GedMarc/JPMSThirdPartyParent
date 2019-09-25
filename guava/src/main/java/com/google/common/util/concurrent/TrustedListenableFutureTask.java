@@ -50,7 +50,7 @@ class TrustedListenableFutureTask<V> extends FluentFuture.TrustedFuture<V>
    *     result, consider using constructions of the form: {@code ListenableFuture<?> f =
    *     ListenableFutureTask.create(runnable, null)}
    */
-  static <V> TrustedListenableFutureTask<V> create(Runnable runnable, @Nullable V result) {
+  static <V> TrustedListenableFutureTask<V> create(Runnable runnable,  V result) {
     return new TrustedListenableFutureTask<V>(Executors.callable(runnable, result));
   }
 

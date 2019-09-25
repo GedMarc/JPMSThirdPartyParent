@@ -196,7 +196,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
   public static <E, K extends Comparable> int binarySearch(
       List<E> list,
       Function<? super E, K> keyFunction,
-      @Nullable K key,
+       K key,
       KeyPresentBehavior presentBehavior,
       KeyAbsentBehavior absentBehavior) {
     return binarySearch(
@@ -213,7 +213,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
   public static <E, K> int binarySearch(
       List<E> list,
       Function<? super E, K> keyFunction,
-      @Nullable K key,
+       K key,
       Comparator<? super K> keyComparator,
       KeyPresentBehavior presentBehavior,
       KeyAbsentBehavior absentBehavior) {
@@ -246,7 +246,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
    */
   public static <E> int binarySearch(
       List<? extends E> list,
-      @Nullable E key,
+       E key,
       Comparator<? super E> comparator,
       KeyPresentBehavior presentBehavior,
       KeyAbsentBehavior absentBehavior) {

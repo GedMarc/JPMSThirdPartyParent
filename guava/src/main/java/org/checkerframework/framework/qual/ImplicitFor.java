@@ -15,7 +15,7 @@ import java.lang.annotation.Target;
  *   &#064;ImplicitFor(literals = LiteralKind.NULL)
  * </pre>
  *
- * to denote that the literal {@code null} always has the type qualifier {@code @Nullable}.
+ * to denote that the literal {@code null} always has the type qualifier {@code }.
  *
  * @checker_framework.manual #creating-declarative-type-introduction Declaratively specifying
  *     implicit annotations

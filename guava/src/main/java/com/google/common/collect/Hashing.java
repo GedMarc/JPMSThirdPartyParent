@@ -50,7 +50,7 @@ final class Hashing {
     return (int) (C2 * Integer.rotateLeft((int) (hashCode * C1), 15));
   }
 
-  static int smearedHash(@Nullable Object o) {
+  static int smearedHash( Object o) {
     return smear((o == null) ? 0 : o.hashCode());
   }
 

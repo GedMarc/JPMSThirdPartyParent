@@ -45,7 +45,7 @@ abstract class AbstractMultimap<K, V> implements Multimap<K, V> {
   }
 
   @Override
-  public boolean containsValue(@Nullable Object value) {
+  public boolean containsValue( Object value) {
     for (Collection<V> collection : asMap().values()) {
       if (collection.contains(value)) {
         return true;
@@ -56,27 +56,27 @@ abstract class AbstractMultimap<K, V> implements Multimap<K, V> {
   }
 
   @Override
-  public boolean containsEntry(@Nullable Object key, @Nullable Object value) {
+  public boolean containsEntry( Object key,  Object value) {
     Collection<V> collection = asMap().get(key);
     return collection != null && collection.contains(value);
   }
 
   @CanIgnoreReturnValue
   @Override
-  public boolean remove(@Nullable Object key, @Nullable Object value) {
+  public boolean remove( Object key,  Object value) {
     Collection<V> collection = asMap().get(key);
     return collection != null && collection.remove(value);
   }
 
   @CanIgnoreReturnValue
   @Override
-  public boolean put(@Nullable K key, @Nullable V value) {
+  public boolean put( K key,  V value) {
     return get(key).add(value);
   }
 
   @CanIgnoreReturnValue
   @Override
-  public boolean putAll(@Nullable K key, Iterable<? extends V> values) {
+  public boolean putAll( K key, Iterable<? extends V> values) {
     checkNotNull(values);
     // make sure we only call values.iterator() once
     // and we only call get(key) if values is nonempty
@@ -101,7 +101,7 @@ abstract class AbstractMultimap<K, V> implements Multimap<K, V> {
 
   @CanIgnoreReturnValue
   @Override
-  public Collection<V> replaceValues(@Nullable K key, Iterable<? extends V> values) {
+  public Collection<V> replaceValues( K key, Iterable<? extends V> values) {
     checkNotNull(values);
     Collection<V> result = removeAll(key);
     putAll(key, values);
@@ -144,7 +144,7 @@ abstract class AbstractMultimap<K, V> implements Multimap<K, V> {
     }
 
     @Override
-    public boolean equals(@Nullable Object obj) {
+    public boolean equals( Object obj) {
       return Sets.equalsImpl(this, obj);
     }
   }
@@ -204,7 +204,7 @@ abstract class AbstractMultimap<K, V> implements Multimap<K, V> {
     }
 
     @Override
-    public boolean contains(@Nullable Object o) {
+    public boolean contains( Object o) {
       return AbstractMultimap.this.containsValue(o);
     }
 
@@ -235,7 +235,7 @@ abstract class AbstractMultimap<K, V> implements Multimap<K, V> {
   // Comparison and hashing
 
   @Override
-  public boolean equals(@Nullable Object object) {
+  public boolean equals( Object object) {
     return Multimaps.equalsImpl(this, object);
   }
 

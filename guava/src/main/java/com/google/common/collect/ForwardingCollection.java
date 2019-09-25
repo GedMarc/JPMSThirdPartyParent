@@ -133,7 +133,7 @@ public abstract class ForwardingCollection<E> extends ForwardingObject implement
    *
    * @since 7.0
    */
-  protected boolean standardContains(@Nullable Object object) {
+  protected boolean standardContains( Object object) {
     return Iterators.contains(iterator(), object);
   }
 
@@ -165,7 +165,7 @@ public abstract class ForwardingCollection<E> extends ForwardingObject implement
    *
    * @since 7.0
    */
-  protected boolean standardRemove(@Nullable Object object) {
+  protected boolean standardRemove( Object object) {
     Iterator<E> iterator = iterator();
     while (iterator.hasNext()) {
       if (Objects.equal(iterator.next(), object)) {

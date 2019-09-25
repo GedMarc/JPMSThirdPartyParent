@@ -100,7 +100,7 @@ final class JdkBackedImmutableBiMap<K, V> extends ImmutableBiMap<K, V> {
   }
 
   @Override
-  public V get(@Nullable Object key) {
+  public V get( Object key) {
     return forwardDelegate.get(key);
   }
 

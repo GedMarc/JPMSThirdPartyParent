@@ -23,7 +23,7 @@ limitations under the License.
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.jwebmp.jpms.thirdparty.commons</groupId>
+    <groupId>com.jwebmp.jpms.thirdparty</groupId>
     <artifactId>commons-parent</artifactId>
     <version>0.0.0_0-SNAPSHOT</version>
   </parent>
@@ -205,47 +205,41 @@ limitations under the License.
   <dependencies>
 
       <dependency>
-          <groupId>com.jwebmp.jpms.thirdparty.commons</groupId>
+          <groupId>com.jwebmp.jpms.thirdparty</groupId>
           <artifactId>commons-logging</artifactId>
-          <version>${project.version}</version>
           <type>jar</type>
             </dependency>
 
       <dependency>
-          <groupId>com.jwebmp.jpms.thirdparty.commons</groupId>
+          <groupId>com.jwebmp.jpms.thirdparty</groupId>
           <artifactId>commons-codec</artifactId>
-          <version>${project.version}</version>
           <type>jar</type>
             </dependency>
 
 
 
       <dependency>
-          <groupId>com.jwebmp.jpms.thirdparty.commons</groupId>
+          <groupId>com.jwebmp.jpms.thirdparty</groupId>
           <artifactId>commons-math3</artifactId>
-          <version>${project.version}</version>
           <type>jar</type>
             </dependency>
 
 
       <dependency>
-          <groupId>com.jwebmp.jpms.thirdparty.commons</groupId>
+          <groupId>com.jwebmp.jpms.thirdparty</groupId>
           <artifactId>commons-collections4</artifactId>
-          <version>${project.version}</version>
           <type>jar</type>
             </dependency>
 
       <dependency>
           <groupId>com.jwebmp.jpms.thirdparty</groupId>
           <artifactId>jakarta.xml.bind-api</artifactId>
-          <version>${project.version}</version>
           <type>jar</type>
             </dependency>
 
       <dependency>
           <groupId>com.jwebmp.jpms.thirdparty</groupId>
           <artifactId>javax.activation</artifactId>
-          <version>${project.version}</version>
           <type>jar</type>
             </dependency>
 

@@ -55,7 +55,7 @@ final class ImmutableMapKeySet<K, V> extends IndexedImmutableSet<K> {
   }
 
   @Override
-  public boolean contains(@Nullable Object object) {
+  public boolean contains( Object object) {
     return map.containsKey(object);
   }
 

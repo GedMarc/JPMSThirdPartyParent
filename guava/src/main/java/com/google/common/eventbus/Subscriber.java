@@ -108,7 +108,7 @@ class Subscriber {
   }
 
   @Override
-  public final boolean equals(@Nullable Object obj) {
+  public final boolean equals( Object obj) {
     if (obj instanceof Subscriber) {
       Subscriber that = (Subscriber) obj;
       // Use == so that different equal instances will still receive events.

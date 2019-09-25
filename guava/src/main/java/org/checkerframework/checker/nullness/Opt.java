@@ -45,7 +45,7 @@ public final class Opt {
      * @throws java.util.NoSuchElementException if primary is null
      * @see java.util.Optional#get()
      */
-    public static <T> @NonNull T get(T primary) {
+    public static <T>  T get(T primary) {
         if (primary == null) {
             throw new NoSuchElementException("No value present");
         }
@@ -58,7 +58,7 @@ public final class Opt {
      * @see java.util.Optional#isPresent()
      */
     @EnsuresNonNullIf(expression = "#1", result = true)
-    public static boolean isPresent(@Nullable Object primary) {
+    public static boolean isPresent( Object primary) {
         return primary != null;
     }
 
@@ -67,7 +67,7 @@ public final class Opt {
      *
      * @see java.util.Optional#ifPresent(java.util.function.Consumer)
      */
-    public static <T> void ifPresent(T primary, Consumer<@NonNull ? super @NonNull T> consumer) {
+    public static <T> void ifPresent(T primary, Consumer< ? super  T> consumer) {
         if (primary != null) {
             consumer.accept(primary);
         }
@@ -79,8 +79,8 @@ public final class Opt {
      *
      * @see java.util.Optional#filter(java.util.function.Predicate)
      */
-    public static <T> @Nullable T filter(
-            T primary, Predicate<@NonNull ? super @NonNull T> predicate) {
+    public static <T>  T filter(
+            T primary, Predicate< ? super  T> predicate) {
         if (primary == null) {
             return null;
         } else {
@@ -94,8 +94,8 @@ public final class Opt {
      *
      * @see java.util.Optional#map(java.util.function.Function)
      */
-    public static <T, U> @Nullable U map(
-            T primary, Function<@NonNull ? super @NonNull T, ? extends U> mapper) {
+    public static <T, U>  U map(
+            T primary, Function< ? super  T, ? extends U> mapper) {
         if (primary == null) {
             return null;
         } else {
@@ -110,7 +110,7 @@ public final class Opt {
      *
      * @see java.util.Optional#orElse(Object)
      */
-    public static <T> @NonNull T orElse(T primary, @NonNull T other) {
+    public static <T>  T orElse(T primary,  T other) {
         return primary != null ? primary : other;
     }
 
@@ -120,7 +120,7 @@ public final class Opt {
      *
      * @see java.util.Optional#orElseGet(java.util.function.Supplier)
      */
-    public static <T> @NonNull T orElseGet(T primary, Supplier<? extends @NonNull T> other) {
+    public static <T>  T orElseGet(T primary, Supplier<? extends  T> other) {
         return primary != null ? primary : other.get();
     }
 
@@ -130,8 +130,8 @@ public final class Opt {
      *
      * @see java.util.Optional#orElseThrow(java.util.function.Supplier)
      */
-    public static <T, X extends @NonNull Throwable> @NonNull T orElseThrow(
-            T primary, Supplier<? extends @NonNull X> exceptionSupplier) throws X {
+    public static <T, X extends  Throwable>  T orElseThrow(
+            T primary, Supplier<? extends  X> exceptionSupplier) throws X {
         if (primary != null) {
             return primary;
         } else {

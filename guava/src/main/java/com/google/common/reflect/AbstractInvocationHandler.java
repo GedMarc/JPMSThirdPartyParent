@@ -59,7 +59,7 @@ public abstract class AbstractInvocationHandler implements InvocationHandler {
    * </ul>
    */
   @Override
-  public final Object invoke(Object proxy, Method method, Object @Nullable [] args)
+  public final Object invoke(Object proxy, Method method, Object  [] args)
       throws Throwable {
     if (args == null) {
       args = NO_ARGS;

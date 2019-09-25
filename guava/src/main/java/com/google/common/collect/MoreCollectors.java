@@ -89,8 +89,8 @@ public final class MoreCollectors {
   private static final class ToOptionalState {
     static final int MAX_EXTRAS = 4;
 
-    @Nullable Object element;
-    @Nullable List<Object> extras;
+     Object element;
+     List<Object> extras;
 
     ToOptionalState() {
       element = null;

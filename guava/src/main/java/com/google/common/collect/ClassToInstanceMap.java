@@ -57,5 +57,5 @@ public interface ClassToInstanceMap<B> extends Map<Class<? extends B>, B> {
    *     null} if there was no previous entry.
    */
   @CanIgnoreReturnValue
-  <T extends B> T putInstance(Class<T> type, @Nullable T value);
+  <T extends B> T putInstance(Class<T> type,  T value);
 }

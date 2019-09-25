@@ -23,20 +23,19 @@
       <dependency>
           <groupId>com.jwebmp.jpms.thirdparty</groupId>
           <artifactId>jakarta.activation</artifactId>
-          <version>${project.version}</version>
           <type>jar</type>
+          <version>${project.version}</version>
       </dependency>
       <dependency>
           <groupId>com.jwebmp.jpms.thirdparty</groupId>
           <artifactId>jakarta.validation-api</artifactId>
-          <version>${project.version}</version>
           <type>jar</type>
+          <version>${project.version}</version>
       </dependency>
 
       <dependency>
           <groupId>jakarta.annotation</groupId>
           <artifactId>jakarta.annotation-api</artifactId>
-          <version>1.3.5</version>
           <type>jar</type>
       </dependency>
   </dependencies>

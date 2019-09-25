@@ -6,7 +6,7 @@
         <artifactId>third-party-modules</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
-	<groupId>com.jwebmp.jpms.thirdparty</groupId>
+	
     <artifactId>jwebmp-jcache-parent</artifactId>
     <packaging>pom</packaging>
 

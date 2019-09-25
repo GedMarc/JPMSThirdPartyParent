@@ -24,7 +24,7 @@ under the License.
     - available unit tests.
     -->
   <parent>
-    <groupId>com.jwebmp.jpms.thirdparty.commons</groupId>
+    <groupId>com.jwebmp.jpms.thirdparty</groupId>
     <artifactId>commons-parent</artifactId>
     <version>0.0.0_0-SNAPSHOT</version>
   </parent>

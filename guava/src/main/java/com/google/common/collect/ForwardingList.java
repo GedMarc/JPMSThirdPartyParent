@@ -114,7 +114,7 @@ public abstract class ForwardingList<E> extends ForwardingCollection<E> implemen
   }
 
   @Override
-  public boolean equals(@Nullable Object object) {
+  public boolean equals( Object object) {
     return object == this || delegate().equals(object);
   }
 
@@ -153,7 +153,7 @@ public abstract class ForwardingList<E> extends ForwardingCollection<E> implemen
    *
    * @since 7.0
    */
-  protected int standardIndexOf(@Nullable Object element) {
+  protected int standardIndexOf( Object element) {
     return Lists.indexOfImpl(this, element);
   }
 
@@ -164,7 +164,7 @@ public abstract class ForwardingList<E> extends ForwardingCollection<E> implemen
    *
    * @since 7.0
    */
-  protected int standardLastIndexOf(@Nullable Object element) {
+  protected int standardLastIndexOf( Object element) {
     return Lists.lastIndexOfImpl(this, element);
   }
 
@@ -222,7 +222,7 @@ public abstract class ForwardingList<E> extends ForwardingCollection<E> implemen
    * @since 7.0
    */
   @Beta
-  protected boolean standardEquals(@Nullable Object object) {
+  protected boolean standardEquals( Object object) {
     return Lists.equalsImpl(this, object);
   }
 

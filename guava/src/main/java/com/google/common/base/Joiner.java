@@ -124,7 +124,7 @@ public class Joiner {
   /** Appends to {@code appendable} the string representation of each of the remaining arguments. */
   @CanIgnoreReturnValue
   public final <A extends Appendable> A appendTo(
-      A appendable, @Nullable Object first, @Nullable Object second, Object... rest)
+      A appendable,  Object first,  Object second, Object... rest)
       throws IOException {
     return appendTo(appendable, iterable(first, second, rest));
   }
@@ -173,7 +173,7 @@ public class Joiner {
    */
   @CanIgnoreReturnValue
   public final StringBuilder appendTo(
-      StringBuilder builder, @Nullable Object first, @Nullable Object second, Object... rest) {
+      StringBuilder builder,  Object first,  Object second, Object... rest) {
     return appendTo(builder, iterable(first, second, rest));
   }
 
@@ -207,7 +207,7 @@ public class Joiner {
    * Returns a string containing the string representation of each argument, using the previously
    * configured separator between each.
    */
-  public final String join(@Nullable Object first, @Nullable Object second, Object... rest) {
+  public final String join( Object first,  Object second, Object... rest) {
     return join(iterable(first, second, rest));
   }
 
@@ -219,7 +219,7 @@ public class Joiner {
     checkNotNull(nullText);
     return new Joiner(this) {
       @Override
-      CharSequence toString(@Nullable Object part) {
+      CharSequence toString( Object part) {
         return (part == null) ? nullText : Joiner.this.toString(part);
       }
 

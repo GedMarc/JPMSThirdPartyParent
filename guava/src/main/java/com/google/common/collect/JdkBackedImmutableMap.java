@@ -61,7 +61,7 @@ final class JdkBackedImmutableMap<K, V> extends ImmutableMap<K, V> {
   }
 
   @Override
-  public V get(@Nullable Object key) {
+  public V get( Object key) {
     return delegateMap.get(key);
   }
 

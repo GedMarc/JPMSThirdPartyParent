@@ -124,7 +124,7 @@ class RegularImmutableBiMap<K, V> extends ImmutableBiMap<K, V> {
    */
   @CanIgnoreReturnValue
   private static int checkNoConflictInValueBucket(
-      Object value, Entry<?, ?> entry, @Nullable ImmutableMapEntry<?, ?> valueBucketHead) {
+      Object value, Entry<?, ?> entry,  ImmutableMapEntry<?, ?> valueBucketHead) {
     int bucketSize = 0;
     for (; valueBucketHead != null; valueBucketHead = valueBucketHead.getNextInValueBucket()) {
       checkNoConflict(!value.equals(valueBucketHead.getValue()), "value", entry, valueBucketHead);
@@ -134,7 +134,7 @@ class RegularImmutableBiMap<K, V> extends ImmutableBiMap<K, V> {
   }
 
   @Override
-  public @Nullable V get(@Nullable Object key) {
+  public  V get( Object key) {
     return (keyTable == null) ? null : RegularImmutableMap.get(key, keyTable, mask);
   }
 
@@ -208,7 +208,7 @@ class RegularImmutableBiMap<K, V> extends ImmutableBiMap<K, V> {
     }
 
     @Override
-    public K get(@Nullable Object value) {
+    public K get( Object value) {
       if (value == null || valueTable == null) {
         return null;
       }

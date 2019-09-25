@@ -24,14 +24,14 @@
 
 
     <parent>
-        <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
+        <groupId>com.jwebmp.jpms.thirdparty</groupId>
         <artifactId>undertow-parent</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
 
     <artifactId>undertow-websockets-jsr</artifactId>
 
-    <name>Undertow WebSockets JSR356 implementations</name>
+    <name>io.undertow.websockets.jsr</name>
 
     <properties>
         <test.level>INFO</test.level>
@@ -42,12 +42,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>undertow-core</artifactId>
             <version>${project.version}</version><type>jar</type>
             </dependency>
         <dependency>
-            <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>undertow-servlet</artifactId>
             <version>${project.version}</version><type>jar</type>
             </dependency>
@@ -75,7 +75,7 @@
             <version>${project.version}</version><type>jar</type>
             </dependency>
         <dependency>
-            <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>undertow-parser-generator</artifactId>
             <version>${project.version}</version><type>jar</type>
             </dependency>
@@ -110,7 +110,7 @@
                     <target>12</target>
                     <annotationProcessorPaths>
                         <annotationProcessorPath>
-                            <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
+                            <groupId>com.jwebmp.jpms.thirdparty</groupId>
                             <artifactId>undertow-parser-generator</artifactId>
                             <version>${project.version}</version>
                         </annotationProcessorPath>

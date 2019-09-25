@@ -266,7 +266,7 @@ public abstract class ImmutableMultiset<E> extends ImmutableMultisetGwtSerializa
   }
 
   @Override
-  public boolean contains(@Nullable Object object) {
+  public boolean contains( Object object) {
     return count(object) > 0;
   }
 
@@ -333,7 +333,7 @@ public abstract class ImmutableMultiset<E> extends ImmutableMultisetGwtSerializa
   }
 
   @Override
-  public boolean equals(@Nullable Object object) {
+  public boolean equals( Object object) {
     return Multisets.equalsImpl(this, object);
   }
 
@@ -598,7 +598,7 @@ public abstract class ImmutableMultiset<E> extends ImmutableMultisetGwtSerializa
     }
 
     @Override
-    public boolean contains(@Nullable Object object) {
+    public boolean contains( Object object) {
       return delegate.contains(object);
     }
 

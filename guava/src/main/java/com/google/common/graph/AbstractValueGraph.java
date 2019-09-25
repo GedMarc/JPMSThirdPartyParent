@@ -111,7 +111,7 @@ public abstract class AbstractValueGraph<N, V> extends AbstractBaseGraph<N>
   }
 
   @Override
-  public final boolean equals(@Nullable Object obj) {
+  public final boolean equals( Object obj) {
     if (obj == this) {
       return true;
     }

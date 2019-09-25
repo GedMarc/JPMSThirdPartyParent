@@ -50,7 +50,7 @@ abstract class CollectionFuture<V, C> extends AggregateFuture<V, C> {
     }
 
     @Override
-    final void collectOneValue(boolean allMustSucceed, int index, @Nullable V returnValue) {
+    final void collectOneValue(boolean allMustSucceed, int index,  V returnValue) {
       List<Optional<V>> localValues = values;
 
       if (localValues != null) {

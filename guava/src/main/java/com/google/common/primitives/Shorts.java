@@ -588,13 +588,13 @@ public final class Shorts {
     }
 
     @Override
-    public boolean contains(@Nullable Object target) {
+    public boolean contains( Object target) {
       // Overridden to prevent a ton of boxing
       return (target instanceof Short) && Shorts.indexOf(array, (Short) target, start, end) != -1;
     }
 
     @Override
-    public int indexOf(@Nullable Object target) {
+    public int indexOf( Object target) {
       // Overridden to prevent a ton of boxing
       if (target instanceof Short) {
         int i = Shorts.indexOf(array, (Short) target, start, end);
@@ -606,7 +606,7 @@ public final class Shorts {
     }
 
     @Override
-    public int lastIndexOf(@Nullable Object target) {
+    public int lastIndexOf( Object target) {
       // Overridden to prevent a ton of boxing
       if (target instanceof Short) {
         int i = Shorts.lastIndexOf(array, (Short) target, start, end);
@@ -637,7 +637,7 @@ public final class Shorts {
     }
 
     @Override
-    public boolean equals(@Nullable Object object) {
+    public boolean equals( Object object) {
       if (object == this) {
         return true;
       }

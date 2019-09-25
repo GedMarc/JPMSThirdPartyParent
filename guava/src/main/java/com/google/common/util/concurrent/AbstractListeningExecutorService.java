@@ -57,7 +57,7 @@ public abstract class AbstractListeningExecutorService extends AbstractExecutorS
   }
 
   @Override
-  public <T> ListenableFuture<T> submit(Runnable task, @Nullable T result) {
+  public <T> ListenableFuture<T> submit(Runnable task,  T result) {
     return (ListenableFuture<T>) super.submit(task, result);
   }
 

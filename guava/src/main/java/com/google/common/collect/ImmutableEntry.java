@@ -23,21 +23,21 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 /** @see com.google.common.collect.Maps#immutableEntry(Object, Object) */
 @GwtCompatible(serializable = true)
 class ImmutableEntry<K, V> extends AbstractMapEntry<K, V> implements Serializable {
-  final @Nullable K key;
-  final @Nullable V value;
+  final  K key;
+  final  V value;
 
-  ImmutableEntry(@Nullable K key, @Nullable V value) {
+  ImmutableEntry( K key,  V value) {
     this.key = key;
     this.value = value;
   }
 
   @Override
-  public final @Nullable K getKey() {
+  public final  K getKey() {
     return key;
   }
 
   @Override
-  public final @Nullable V getValue() {
+  public final  V getValue() {
     return value;
   }
 

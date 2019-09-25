@@ -20,8 +20,10 @@
     <dependencies>
         <dependency>
             <groupId>com.jwebmp.jpms.thirdparty</groupId>
-            <artifactId>cache-api</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>cache-api</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 </project>
